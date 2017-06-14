@@ -1,0 +1,60 @@
+{
+  "name": "axe-core",
+  "description": "Accessibility engine for automated Web UI testing",
+  "license": "MPL-2.0",
+  "contributors": [
+    {
+      "name": "Wilco Fiers",
+      "organization": "Deque Systems, Inc.",
+      "url": "http://deque.com/"
+    },
+    {
+      "name": "Sujasree Kurapati",
+      "organization": "Deque Systems, Inc.",
+      "url": "http://deque.com/"
+    },
+    {
+      "name": "Manoj Venkata",
+      "organization": "Deque Systems, Inc.",
+      "url": "http://deque.com/"
+    }
+  ],
+  "a11y-testcases": [
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.%20Perceivable/Guideline%201.1%20Text%20Alternatives/1.1.1%20Nontext%20Content/text-equiv-all_H24_Pass.html",
+      "successCriteria": [
+        "wcag20:text-equiv-all-H24-Pass"
+      ]
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.%20Perceivable/Guideline%201.1%20Text%20Alternatives/1.1.1%20Nontext%20Content/text-equiv-all_H24_Fail.html",
+      "successCriteria": [
+        "wcag20:text-equiv-all-H24-Fail"
+      ]
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.%20Perceivable/Guideline%201.1%20Text%20Alternatives/1.1.1%20Nontext%20Content/text-equiv-all_H36_Pass.html",
+      "successCriteria": [
+        "wcag20:text-equiv-all-H36-Pass"
+      ]
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.%20Perceivable/Guideline%201.1%20Text%20Alternatives/1.1.1%20Nontext%20Content/text-equiv-all_H36_Fail.html",
+      "successCriteria": [
+        "wcag20:text-equiv-all-H36-Fail"
+      ]
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.%20Perceivable/Guideline%201.1%20Text%20Alternatives/1.1.1%20Nontext%20Content/text-equiv-all_H37_Pass.html",
+      "successCriteria": [
+        "wcag20:text-equiv-all-H37-Pass"
+      ]
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.%20Perceivable/Guideline%201.1%20Text%20Alternatives/1.1.1%20Nontext%20Content/text-equiv-all_H37_Fail.html",
+      "successCriteria": [
+        "wcag20:text-equiv-all-H37-Fail"
+      ]
+    }
+  ]
+}
