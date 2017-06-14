@@ -1,13 +1,7 @@
 {
-  "name": "axe-core",
-  "description": "Accessibility engine for automated Web UI testing",
-  "license": "MPL-2.0",
+  "name": "a11y-WCAG",
+  "description": "WCAG Test Files Examples",
   "contributors": [
-    {
-      "name": "Wilco Fiers",
-      "organization": "Deque Systems, Inc.",
-      "url": "http://deque.com/"
-    },
     {
       "name": "Sujasree Kurapati",
       "organization": "Deque Systems, Inc.",
