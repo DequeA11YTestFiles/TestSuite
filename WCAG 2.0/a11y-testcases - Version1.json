@@ -23,6 +23,16 @@
       "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.1_Text-Alternatives/1.1.1_Nontext-Content/text-equiv-all_H24_Fail.html",
       "successCriteria": ["wcag20:text-equiv-all"],
       "technique": "H24-Fail"
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.1_Text-Alternatives/1.1.1_Nontext-Content/text-equiv-all_H36_Pass.html",
+      "successCriteria": ["wcag20:text-equiv-all"],
+      "technique": "H36-Pass"
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.1_Text-Alternatives/1.1.1_Nontext-Content/text-equiv-all_H36_Fail.html",
+      "successCriteria": ["wcag20:text-equiv-all"],
+      "technique": "H36-Fail"
     }
   ]
 }
