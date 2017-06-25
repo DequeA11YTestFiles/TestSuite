@@ -1,0 +1,345 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../favicon.ico">
+
+    <title>H48: Using ol, ul and dl for lists or groups of links</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../Resources/Styles/bootstrap.css" rel="stylesheet">
+    <link href="../../../Resources/Styles/hilighter.css" rel="stylesheet">
+    <!-- Custom scripts for this template -->
+       <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+   <script>
+  $(document).ready(function() {
+    function function1() {
+    // add a click handler to all links
+    // that point to same-page targets (href="#...")
+  $("a[href^='#']").click(function() {
+      // get the href attribute of the internal link
+      // then strip the first character off it (#)
+      // leaving the corresponding id attribute
+      $("#"+$(this).attr("href").slice(1)+"")
+        // give that id focus (for browsers that didn't already do so)
+        .focus()
+        // add a highlight effect to that id (comment out if not using)
+        .effect("highlight", {}, 3000);
+
+    });
+    }
+
+  });
+</script>
+
+
+  </head>
+
+  <body>
+
+        <!-- Begin page content -->
+    <div class="container" id="content">
+     <!-- <div class="page-header"></div>
+       Content Starts here -->
+      <!-- Scenario Start -->
+    <div class="row">
+    <div class="col-md-12">
+
+    <div class="bs-callout bs-callout-info" id="callout-type-dl-truncate"> <h1>H48: Using ol, ul and dl for lists or groups of links</h1> </div>
+
+  
+     <table class="table table-bordered" id="test">
+             <thead>
+              <tr>
+              
+              <th scope="50%" scope="col">HTML Snippet</th>
+              <th width="50%" scope="col">Code</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr><td colspan="2"><div><strong>Scenario 1:</strong> DL Elements are not structured correctly</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet wcag-fail">                       
+                  <h1> Deque Product Information </h1>
+<dl>
+<dt>WCAG</dt>
+<p>Web Content Accessibility Guidelines</p>
+<dt>GAAD</dt>
+<p>Global Accessibility Awareness Day</p>
+<dt>AT</dt>
+<p>Assistive Technology</p>
+<dt>ATA</dt>
+<p>Assistive Technology Act</p>
+</dl>     
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><h1> Deque Product Information </h1>
+<dl>
+<dt>WCAG</dt>
+<p>Web Content Accessibility Guidelines</p>
+<dt>GAAD</dt>
+<p>Global Accessibility Awareness Day</p>
+<dt>AT</dt>
+<p>Assistive Technology</p>
+<dt>ATA</dt>
+<p>Assistive Technology Act</p>
+</dl></xmp></td>
+                </tr>
+
+                <tr><td colspan="2"><div><strong>Scenario 2:</strong> DT and DD elements are not contained by a DL</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet wcag-fail">                       
+                   <dt>WCAG</dt>
+<dd>Web Content Accessibility Guidelines</dd>
+<dt>GAAD</dt>
+<dd>Global Accessibility Awareness Day</dd>
+<dt>AT</dt>
+<dd>Assistive Technology</dd>
+<dt>ATA</dt>
+<dd>Assistive Technology Act</dd>    
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><dt>WCAG</dt>
+<dd>Web Content Accessibility Guidelines</dd>
+<dt>GAAD</dt>
+<dd>Global Accessibility Awareness Day</dd>
+<dt>AT</dt>
+<dd>Assistive Technology</dd>
+<dt>ATA</dt>
+<dd>Assistive Technology Act</dd></xmp></td>
+                </tr> 
+
+                <tr><td colspan="2"><div><strong>Scenario 3:</strong> Lists are not structured correctly</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet wcag-fail">                       
+                  <ol>
+<p>List of Deque Products</p>
+<li>Workdspace</li>
+<li>FireEyes2</li>
+<li>aXe</li>
+<li>Amaze</li>
+</ol>     
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><ol>
+<p>List of Deque Products</p>
+<li>Workdspace</li>
+<li>FireEyes2</li>
+<li>aXe</li>
+<li>Amaze</li>
+</ol></xmp></td>
+                </tr>
+
+                <tr><td colspan="2"><div><strong>Scenario 4:</strong> LI elements are not used semantically</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet wcag-fail">                       
+                  <p> Deque Product Information </p>
+<li>WCAG :</li> <span>Web Content Accessibility Guidelines </span>
+<li>GAAD :</li> <span>Global Accessibility Awareness Day </span>
+<li>AT :</li> <span>Assistive Technology </span>
+<li>ATA :</li> <span>Assistive Technology Act</span>     
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><p> Deque Product Information </p>
+<li>WCAG :</li> <span>Web Content Accessibility Guidelines </span>
+<li>GAAD :</li> <span>Global Accessibility Awareness Day </span>
+<li>AT :</li> <span>Assistive Technology </span>
+<li>ATA :</li> <span>Assistive Technology Act</span></xmp></td>
+                </tr>
+
+                <tr><td colspan="2"><div><strong>Scenario 5:</strong> Repeated DD continusly</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet wcag-fail">                       
+                  <h1> Deque Product Information </h1>
+<dl>
+<dt>WCAG</dt>
+<dd>Web Content Accessibility Guidelines</dd>
+<dt>GAAD</dt>
+<dd>Global Accessibility Awareness Day</dd>
+<dt>AT</dt>
+<dd>Assistive Technology</dd>
+<dd>Example are NVDA, JAWA and VoiceOver</dd>
+<dt>ATA</dt>
+<dd>Assistive Technology Act</dd>
+</dl>     
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><h1> Deque Product Information </h1>
+<dl>
+<dt>WCAG</dt>
+<dd>Web Content Accessibility Guidelines</dd>
+<dt>GAAD</dt>
+<dd>Global Accessibility Awareness Day</dd>
+<dt>AT</dt>
+<dd>Assistive Technology</dd>
+<dd>Example are NVDA, JAWA and VoiceOver</dd>
+<dt>ATA</dt>
+<dd>Assistive Technology Act</dd>
+</dl></xmp></td>
+                </tr>
+
+                <tr><td colspan="2"><div><strong>Scenario 6:</strong> DL without DT and DD</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet wcag-fail">                       
+                  <dl id="divdl"><h1> Deque Product Information </h1></dl>
+<dl>
+<dt>WCAG</dt>
+<dd>Web Content Accessibility Guidelines</dd>
+<dt>GAAD</dt>
+<dd>Global Accessibility Awareness Day</dd>
+<dt>AT</dt>
+<dd>Assistive Technology</dd>
+<dt>ATA</dt>
+<dd>Assistive Technology Act</dd>
+</dl>     
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><dl id="divdl"><h1> Deque Product Information </h1></dl>
+<dl>
+<dt>WCAG</dt>
+<dd>Web Content Accessibility Guidelines</dd>
+<dt>GAAD</dt>
+<dd>Global Accessibility Awareness Day</dd>
+<dt>AT</dt>
+<dd>Assistive Technology</dd>
+<dt>ATA</dt>
+<dd>Assistive Technology Act</dd>
+</dl></xmp></td>
+                </tr>
+
+                <tr><td colspan="2"><div><strong>Scenario 7:</strong> DT and DD are not structured properly in DL</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet wcag-fail">                       
+                  <h1> Deque Product Information </h1>
+<dl>
+<dd>WCAG</dd>
+<dt>Web Content Accessibility Guidelines</dt>
+<dd>GAAD</dd>
+<dt>Global Accessibility Awareness Day</dt>
+<dd>AT</dd>
+<dt>Assistive Technology</dt>
+<dd>ATA</dd>
+<dt>Assistive Technology Act</dt>
+</dl>     
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><h1> Deque Product Information </h1>
+<dl>
+<dd>WCAG</dd>
+<dt>Web Content Accessibility Guidelines</dt>
+<dd>GAAD</dd>
+<dt>Global Accessibility Awareness Day</dt>
+<dd>AT</dd>
+<dt>Assistive Technology</dt>
+<dd>ATA</dd>
+<dt>Assistive Technology Act</dt>
+</dl></xmp></td>
+                </tr>
+
+                <tr><td colspan="2"><div><strong>Scenario 8:</strong> Mixed script without DL and DD</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet wcag-fail">                       
+                  <dl id="mixedscriptdl">
+  <script>
+  </script>
+  <template>
+  </template>
+  <h1> Deque Product Information </h1>
+</dl>
+<dl>
+<dd>WCAG</dd>
+<dt>Web Content Accessibility Guidelines</dt>
+<dd>GAAD</dd>
+<dt>Global Accessibility Awareness Day</dt>
+<dd>AT</dd>
+<dt>Assistive Technology</dt>
+<dd>ATA</dd>
+<dt>Assistive Technology Act</dt>
+</dl>     
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><dl id="mixedscriptdl">
+  <script>
+  </script>
+  <template>
+  </template>
+  <h1> Deque Product Information </h1>
+</dl>
+<dl>
+<dd>WCAG</dd>
+<dt>Web Content Accessibility Guidelines</dt>
+<dd>GAAD</dd>
+<dt>Global Accessibility Awareness Day</dt>
+<dd>AT</dd>
+<dt>Assistive Technology</dt>
+<dd>ATA</dd>
+<dt>Assistive Technology Act</dt>
+</dl></xmp></td>
+                </tr>
+
+                <tr><td colspan="2"><div><strong>Scenario 9:</strong> DT is not contained by a DL</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet wcag-fail">                       
+                  <dt>AT</dt>     
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><dt>AT</dt></xmp></td>
+                </tr>
+
+                <tr><td colspan="2"><div><strong>Scenario 10:</strong> DD is not contained by a DL</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet wcag-fail">                       
+                  <dd id="uncontained">Assertive Technology </dd>     
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><dd id="uncontained">Assertive Technology </dd></xmp></td>
+                </tr>
+                </tbody> </table>
+    </div>
+
+      </div><!-- /tabbable -->
+      </div>
+      <div class="clearfix"></div>
+      </div>
+    <!-- <div class="page-header"></div> -->
+
+      <!-- Content Ends here -->
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p class="text-muted" style="text-align: center;">Deque Systems, Inc.</p>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="../../../Resources/Scripts/custom.js"></script>
+    <script src="../../../Resources/Scripts/bootstrap.js"></script>
+    <script src="../../../Resources/Scripts/hilighter.js"></script>
+    <script>$.SyntaxHighlighter.init();
+    $('.highlight').attr('max-height', '100px');
+    </script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+  </body>
+</html>
