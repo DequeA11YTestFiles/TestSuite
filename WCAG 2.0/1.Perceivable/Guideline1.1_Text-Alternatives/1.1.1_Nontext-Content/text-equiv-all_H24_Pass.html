@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../favicon.ico">
+
+    <title>H24: Providing text alternatives for the area elements of image maps</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../Resources/Styles/bootstrap.css" rel="stylesheet">
+    <link href="../../../Resources/Styles/hilighter.css" rel="stylesheet">
+    <!-- Custom scripts for this template -->
+       <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+   <script>
+  $(document).ready(function() {
+    function function1() {
+    // add a click handler to all links
+    // that point to same-page targets (href="#...")
+  $("a[href^='#']").click(function() {
+      // get the href attribute of the internal link
+      // then strip the first character off it (#)
+      // leaving the corresponding id attribute
+      $("#"+$(this).attr("href").slice(1)+"")
+        // give that id focus (for browsers that didn't already do so)
+        .focus()
+        // add a highlight effect to that id (comment out if not using)
+        .effect("highlight", {}, 3000);
+
+    });
+    }
+
+  });
+</script>
+
+
+  </head>
+
+  <body>
+
+        <!-- Begin page content -->
+    <div class="container" id="content">
+     <!-- <div class="page-header"></div>
+       Content Starts here -->
+      <!-- Scenario Start -->
+    <div class="row">
+    <div class="col-md-12">
+
+    <div class="bs-callout bs-callout-info" id="callout-type-dl-truncate"> <h1>H24: Providing text alternatives for the area elements of image maps</h1> </div>
+
+  
+     <table class="table table-bordered" id="test">
+             <thead>
+              <tr>
+              
+              <th scope="50%" scope="col">HTML Snippet</th>
+              <th width="50%" scope="col">Code</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr><td colspan="2"><div><strong>Scenario 1:</strong> area elements of image maps have alternate text using alt</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet">                       
+                       <img src="../../../Resources/Images/Deque_Products.png" alt="Deque Products list" usemap="#Map">
+<map name="Map" id="Map" class="wcag-pass">
+  <area shape="rect" coords="176,14,323,58" href="http://www.deque.com/products/" alt="Deque Products" >
+  <area shape="rect" coords="6,138,155,182" href="http://www.deque.com/products/axe/" alt="aXe Product" >
+  <area shape="rect" coords="175,138,323,182" href="http://www.deque.com/products/worldspace-comply/" alt="Worldspace Comply Product" >
+  <area shape="rect" coords="345,136,496,186" href="http://www.deque.com/products/amaze/" alt="Amaze Product" >
+</map>
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><img src="../../../Resources/Images/Deque_Products.png" alt="Deque Products list" usemap="#Map">
+<map name="Map" id="Map" class="wcag-pass">
+  <area shape="rect" coords="176,14,323,58" href="http://www.deque.com/products/" alt="Deque Products" >
+  <area shape="rect" coords="6,138,155,182" href="http://www.deque.com/products/axe/" alt="aXe Product" >
+  <area shape="rect" coords="175,138,323,182" href="http://www.deque.com/products/worldspace-comply/" alt="Worldspace Comply Product" >
+  <area shape="rect" coords="345,136,496,186" href="http://www.deque.com/products/amaze/" alt="Amaze Product" >
+</map></xmp></td>
+                </tr> 
+
+                <tr><td colspan="2"><div><strong>Scenario 2:</strong> area elements of image maps have alternate text using title</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet">
+                <img src="../../../Resources/Images/Deque_Products.png" alt="Deque Products list" usemap="#Map">
+<map name="Map" id="Map" class="wcag-pass">
+  <area shape="rect" coords="176,14,323,58" href="http://www.deque.com/products/" title="Deque Products" >
+  <area shape="rect" coords="6,138,155,182" href="http://www.deque.com/products/axe/" title="aXe Product" >
+  <area shape="rect" coords="175,138,323,182" href="http://www.deque.com/products/worldspace-comply/" title="Worldspace Comply Product" >
+  <area shape="rect" coords="345,136,496,186" href="http://www.deque.com/products/amaze/" title="Amaze Product" >
+</map>                       
+                                           </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><img src="../../../Resources/Images/Deque_Products.png" alt="Deque Products list" usemap="#Map">
+<map name="Map" id="Map" class="wcag-pass">
+  <area shape="rect" coords="176,14,323,58" href="http://www.deque.com/products/" title="Deque Products" >
+  <area shape="rect" coords="6,138,155,182" href="http://www.deque.com/products/axe/" title="aXe Product" >
+  <area shape="rect" coords="175,138,323,182" href="http://www.deque.com/products/worldspace-comply/" title="Worldspace Comply Product" >
+  <area shape="rect" coords="345,136,496,186" href="http://www.deque.com/products/amaze/" title="Amaze Product" >
+</map></xmp></td>
+                </tr> 
+
+<tr><td colspan="2"><div><strong>Scenario 3:</strong> area elements of image maps have alternate text using aria-label</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet">
+                <img src="../../../Resources/Images/Deque_Products.png" alt="Deque Products list" usemap="#Map">
+<map name="Map" id="Map" class="wcag-pass">
+  <area shape="rect" coords="176,14,323,58" href="http://www.deque.com/products/" aria-label="Deque Products" >
+  <area shape="rect" coords="6,138,155,182" href="http://www.deque.com/products/axe/" aria-label="aXe Product" >
+  <area shape="rect" coords="175,138,323,182" href="http://www.deque.com/products/worldspace-comply/" aria-label="Worldspace Comply Product" >
+  <area shape="rect" coords="345,136,496,186" href="http://www.deque.com/products/amaze/" aria-label="Amaze Product" >
+</map>                       
+                                           </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><img src="../../../Resources/Images/Deque_Products.png" alt="Deque Products list" usemap="#Map">
+<map name="Map" id="Map" class="wcag-pass">
+  <area shape="rect" coords="176,14,323,58" href="http://www.deque.com/products/" aria-label="Deque Products" >
+  <area shape="rect" coords="6,138,155,182" href="http://www.deque.com/products/axe/" aria-label="aXe Product" >
+  <area shape="rect" coords="175,138,323,182" href="http://www.deque.com/products/worldspace-comply/" aria-label="Worldspace Comply Product" >
+  <area shape="rect" coords="345,136,496,186" href="http://www.deque.com/products/amaze/" aria-label="Amaze Product" >
+</map></xmp></td>
+                </tr> 
+
+
+
+<tr><td colspan="2"><div><strong>Scenario 4:</strong> area elements of image maps have alternate text using aria-labelledby</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet">
+                <img src="../../../Resources/Images/Deque_Products.png" alt="Deque Products list" usemap="#Map">
+<map name="Map" id="Map" class="wcag-pass">
+  <area shape="rect" coords="176,14,323,58" href="http://www.deque.com/products/" aria-labelledby="p1" >
+  <area shape="rect" coords="6,138,155,182" href="http://www.deque.com/products/axe/" aria-labelledby="p2" >
+  <area shape="rect" coords="175,138,323,182" href="http://www.deque.com/products/worldspace-comply/" aria-labelledby="p3" >
+  <area shape="rect" coords="345,136,496,186" href="http://www.deque.com/products/amaze/" aria-labelledby="p4" >
+</map>
+<div style="visibility:hidden">
+<span id="p1">deque products</span>
+<span id="p2">aXe</span>
+<span id="p3">worldspace comply</span>
+<span id="p4">amaze</span>
+</div>                       
+                                           </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><img src="../../../Resources/Images/Deque_Products.png" alt="Deque Products list" usemap="#Map">
+<map name="Map" id="Map" class="wcag-pass">
+  <area shape="rect" coords="176,14,323,58" href="http://www.deque.com/products/" aria-labelledby="p1" >
+  <area shape="rect" coords="6,138,155,182" href="http://www.deque.com/products/axe/" aria-labelledby="p2" >
+  <area shape="rect" coords="175,138,323,182" href="http://www.deque.com/products/worldspace-comply/" aria-labelledby="p3" >
+  <area shape="rect" coords="345,136,496,186" href="http://www.deque.com/products/amaze/" aria-labelledby="p4" >
+</map>
+<div style="visibility:hidden">
+<span id="p1">deque products</span>
+<span id="p2">aXe</span>
+<span id="p3">worldspace comply</span>
+<span id="p4">amaze</span>
+</div></xmp></td>
+                </tr> 
+
+
+                </tbody> </table>
+    </div>
+
+      </div><!-- /tabbable -->
+      </div>
+      <div class="clearfix"></div>
+      </div>
+    <!-- <div class="page-header"></div> -->
+
+      <!-- Content Ends here -->
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p class="text-muted" style="text-align: center;">Deque Systems, Inc.</p>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="../../../Resources/Scripts/custom.js"></script>
+    <script src="../../../Resources/Scripts/bootstrap.js"></script>
+    <script src="../../../Resources/Scripts/hilighter.js"></script>
+    <script>$.SyntaxHighlighter.init();
+    $('.highlight').attr('max-height', '100px');
+    </script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+  </body>
+</html>
