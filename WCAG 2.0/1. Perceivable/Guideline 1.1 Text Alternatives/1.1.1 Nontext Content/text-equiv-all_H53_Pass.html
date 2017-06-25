@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../favicon.ico">
 
-    <title>H37: Using alt attributes on img elements</title>
+    <title>H53: Using the body of the object element</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../../Resources/Styles/bootstrap.css" rel="stylesheet">
@@ -60,7 +60,7 @@
     <div class="row">
     <div class="col-md-12">
 
-    <div class="bs-callout bs-callout-info" id="callout-type-dl-truncate"> <h1>H37: Using alt attributes on img elements</h1> </div>
+    <div class="bs-callout bs-callout-info" id="callout-type-dl-truncate"> <h1>H53: Using the body of the object element</h1> </div>
 
   
      <table class="table table-bordered" id="test">
@@ -72,55 +72,59 @@
               </tr>
               </thead>
               <tbody>
-              <tr><td colspan="2"><div><strong>Scenario 1:</strong> Alternative text is empty for active image</div></td></tr>
+              <tr><td colspan="2"><div><strong>Scenario 1:</strong> Alternative text is provided for object tag</div></td></tr>
                 <tr class="Examplerow">
                 <td class="htmlSnippet">                       
-                       <a href="http://www.deque.com">
-<img src="../../../Resources/Images/logo.jpg" height="50px" width="140px" alt="" class="wcag-fail"/>
-</a>
+                       <object title="deque logo">
+  <img src="../../../Resources/Images/logo.jpg" alt="" height="40" width="120" class="wcag-pass"/>
+</object> 
                      </td>
                      <td class="code"> 
-                     <xmp class="highlight"><a href="http://www.deque.com">
-<img src="../../../Resources/Images/logo.jpg" height="50px" width="140px" alt="" class="wcag-fail"/>
-</a></xmp></td>
-                </tr>
-                <tr><td colspan="2"><div><strong>Scenario 2:</strong> Placeholder text is used for alternative text</div></td></tr>
-                <tr class="Examplerow">
-                <td class="htmlSnippet">
-                <a href="http://www.deque.com">
-<img src="../../../Resources/Images/logo.jpg" height="50px" width="140px" alt="image" class="wcag-fail"/>
-</a>                       
-                                           </td>
-                     <td class="code"> 
-                     <xmp class="highlight"><a href="http://www.deque.com">
-<img src="../../../Resources/Images/logo.jpg" height="50px" width="140px" alt="image" class="wcag-fail"/>
-</a> </xmp></td>
-                </tr> 
-<tr><td colspan="2"><div><strong>Scenario 3:</strong> Alternative text provided is not meaningful</div></td></tr>
-                <tr class="Examplerow">
-                <td class="htmlSnippet"> 
-                <a href="http://www.deque.com">
-<img src="../../../Resources/Images/logo.jpg" height="50px" width="140px" alt="!!@!!" class="wcag-fail"/>
-</a>                      
-                                           </td>
-                     <td class="code"> 
-                     <xmp class="highlight"><a href="http://www.deque.com">
-<img src="../../../Resources/Images/logo.jpg" height="50px" width="140px" alt="!!@!!" class="wcag-fail"/>
-</a></xmp></td>
-                </tr> 
-<tr><td colspan="2"><div><strong>Scenario 4:</strong> Alternative attribute is missing for the image</div></td></tr>
-                <tr class="Examplerow">
-                <td class="htmlSnippet">
-                <a href="http://www.deque.com">
-<img src="../../../Resources/Images/logo.jpg" height="50px" width="140px" class="wcag-fail"/>
-</a>                       
-                                           </td>
-                     <td class="code"> 
-                     <xmp class="highlight"><a href="http://www.deque.com">
-<img src="../../../Resources/Images/logo.jpg" height="50px" width="140px" class="wcag-fail"/>
-</a></xmp></td>
+                     <xmp class="highlight"><object title="deque logo">
+  <img src="../../../Resources/Images/logo.jpg" alt="" height="40" width="120" class="wcag-pass"/>
+</object></xmp></td>
                 </tr> 
 
+                <tr><td colspan="2"><div><strong>Scenario 2:</strong> Object includes a long description that describes it</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet">                       
+                      <h1 style="font-size:12px"> Object tag with description </h1>
+<object classid="http://www.deque.com" class="wcag-pass">
+  <p>Click on the link which will redirect to deque.com</p>
+</object>
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><h1 style="font-size:12px"> Object tag with description </h1>
+<object classid="http://www.deque.com" class="wcag-pass">
+  <p>Click on the link which will redirect to deque.com</p>
+</object></xmp></td>
+                </tr> 
+
+                <tr><td colspan="2"><div><strong>Scenario 3:</strong> Alternative text is provided for object tag using aria-label</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet">                       
+                       <object class="wcag-pass">
+  <img src="../../../Resources/Images/logo.jpg" alt="" height="40" width="120" aria-label="deque"/>
+</object>
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><object class="wcag-pass">
+  <img src="../../../Resources/Images/logo.jpg" alt="" height="40" width="120" aria-label="deque"/>
+</object></xmp></td>
+                </tr> 
+
+                <tr><td colspan="2"><div><strong>Scenario 4:</strong> Alternative text is provided for object tag using title</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet">                       
+                       <object class="wcag-pass">
+  <img src="../../../Resources/Images/logo.jpg" alt="" height="40" width="120" title="Deque"/>
+</object>
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><object class="wcag-pass">
+  <img src="../../../Resources/Images/logo.jpg" alt="" height="40" width="120" title="Deque"/>
+</object></xmp></td>
+                </tr> 
                 </tbody> </table>
     </div>
 

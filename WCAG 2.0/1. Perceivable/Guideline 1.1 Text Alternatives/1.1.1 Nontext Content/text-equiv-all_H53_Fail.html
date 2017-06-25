@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../favicon.ico">
 
-    <title>H36: Using alt attributes on images used as submit buttons</title>
+    <title>H53: Using the body of the object element</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../../Resources/Styles/bootstrap.css" rel="stylesheet">
@@ -60,7 +60,7 @@
     <div class="row">
     <div class="col-md-12">
 
-    <div class="bs-callout bs-callout-info" id="callout-type-dl-truncate"> <h1>H36: Using alt attributes on images used as submit buttons</h1> </div>
+    <div class="bs-callout bs-callout-info" id="callout-type-dl-truncate"> <h1>H53: Using the body of the object element</h1> </div>
 
   
      <table class="table table-bordered" id="test">
@@ -72,74 +72,95 @@
               </tr>
               </thead>
               <tbody>
-              <tr><td colspan="2"><div><strong>Scenario 1:</strong> Alternative text for input type image button using alt</div></td></tr>
+              <tr><td colspan="2"><div><strong>Scenario 1:</strong> Null alternative text is not provided for object tag using alt</div></td></tr>
                 <tr class="Examplerow">
                 <td class="htmlSnippet">                       
-                       <label for="email">Enter Email</label>
-<input type="text" id="email"/><br/>
-<label for="password">Enter Password</label>
-<input type="password" id="password"/><br/>
-<input type="image" src="../../../Resources/Images/Login.png" height="30px" width="30px" alt="Member Login" class="wcag-pass"/>
+                       <object class="wcag-fail">
+  <img src="../../../Resources/Images/logo.jpg" alt="" height="40" width="120" alt=""/>
+</object>
                      </td>
                      <td class="code"> 
-                     <xmp class="highlight"><label for="email">Enter Email</label>
-<input type="text" id="email"/><br/>
-<label for="password">Enter Password</label>
-<input type="password" id="password"/><br/>
-<input type="image" src="../../../Resources/Images/Login.png" height="30px" width="30px" alt="Member Login" class="wcag-pass"/></xmp></td>
+                     <xmp class="highlight"><object class="wcag-fail">
+  <img src="../../../Resources/Images/logo.jpg" alt="" height="40" width="120" alt=""/>
+</object></xmp></td>
                 </tr> 
 
-                <tr><td colspan="2"><div><strong>Scenario 2:</strong> Alternative text for input type image button using aria-label</div></td></tr>
+                 <tr><td colspan="2"><div><strong>Scenario 2:</strong> Null alternative text is not provided for object tag using aria-label</div></td></tr>
                 <tr class="Examplerow">
                 <td class="htmlSnippet">                       
-                       <label for="email">Enter Email</label>
-<input type="text" id="email"/><br/>
-<label for="password">Enter Password</label>
-<input type="password" id="password"/><br/>
-<input type="image" src="../../../Resources/Images/Login.png" height="30px" width="30px" aria-label="Member Login" class="wcag-pass"/>
+                       <object class="wcag-fail">
+  <img src="../../../Resources/Images/logo.jpg" alt="" height="40" width="120" aria-label=""/>
+</object>
                      </td>
                      <td class="code"> 
-                     <xmp class="highlight"><label for="email">Enter Email</label>
-<input type="text" id="email"/><br/>
-<label for="password">Enter Password</label>
-<input type="password" id="password"/><br/>
-<input type="image" src="../../../Resources/Images/Login.png" height="30px" width="30px" aria-label="Member Login" class="wcag-pass"/></xmp></td>
+                     <xmp class="highlight"><object class="wcag-fail">
+  <img src="../../../Resources/Images/logo.jpg" alt="" height="40" width="120" aria-label=""/>
+</object></xmp></td>
                 </tr> 
 
-                <tr><td colspan="2"><div><strong>Scenario 3:</strong> Alternative text for input type image button using title</div></td></tr>
+                 <tr><td colspan="2"><div><strong>Scenario 3:</strong> Invalid alternative text is provided for object tag using aria-label</div></td></tr>
                 <tr class="Examplerow">
                 <td class="htmlSnippet">                       
-                       <label for="email">Enter Email</label>
-<input type="text" id="email"/><br/>
-<label for="password">Enter Password</label>
-<input type="password" id="password"/><br/>
-<input type="image" src="../../../Resources/Images/Login.png" height="30px" width="30px" title="Member Login" class="wcag-pass"/>
+                       <object class="wcag-fail">
+  <img src="../../../Resources/Images/logo.jpg" alt="" height="40" width="120" aria-label="!!@@!!"/>
+</object>
                      </td>
                      <td class="code"> 
-                     <xmp class="highlight"><label for="email">Enter Email</label>
-<input type="text" id="email"/><br/>
-<label for="password">Enter Password</label>
-<input type="password" id="password"/><br/>
-<input type="image" src="../../../Resources/Images/Login.png" height="30px" width="30px" title="Member Login" class="wcag-pass"/></xmp></td>
+                     <xmp class="highlight"><object class="wcag-fail">
+  <img src="../../../Resources/Images/logo.jpg" alt="" height="40" width="120" aria-label="!!@@!!"/>
+</object></xmp></td>
                 </tr> 
 
-                <tr><td colspan="2"><div><strong>Scenario 4:</strong> Alternative text for input type image button using aria-labelledby</div></td></tr>
+                 <tr><td colspan="2"><div><strong>Scenario 4:</strong> Invalid alternative text is provided for object tag using alt</div></td></tr>
                 <tr class="Examplerow">
                 <td class="htmlSnippet">                       
-                       <label for="email">Enter Email</label>
-<input type="text" id="email"/><br/>
-<label for="password">Enter Password</label>
-<input type="password" id="password"/><br/>
-<input type="image" src="../../../Resources/Images/Login.png" height="30px" width="30px" aria-labelledby="lbl" class="wcag-pass"/>
-<span id="lbl" style="visibility:hidden">submit</span>
+                       <object class="wcag-fail">
+  <img src="../../../Resources/Images/logo.jpg" alt="" height="40" width="120" alt="!!@@!!"/>
+</object>
                      </td>
                      <td class="code"> 
-                     <xmp class="highlight"><label for="email">Enter Email</label>
-<input type="text" id="email"/><br/>
-<label for="password">Enter Password</label>
-<input type="password" id="password"/><br/>
-<input type="image" src="../../../Resources/Images/Login.png" height="30px" width="30px" aria-labelledby="lbl" class="wcag-pass"/>
-<span id="lbl" style="visibility:hidden">submit</span></xmp></td>
+                     <xmp class="highlight"><object class="wcag-fail">
+  <img src="../../../Resources/Images/logo.jpg" alt="" height="40" width="120" alt="!!@@!!"/>
+</object></xmp></td>
+                </tr> 
+
+                 <tr><td colspan="2"><div><strong>Scenario 5:</strong> Invalid alternative text is provided for object tag using title</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet">                       
+                       <object class="wcag-fail">
+ <img src="../../../Resources/Images/logo.jpg" alt="" height="40" width="120" title="!!@@!!"/>
+</object>
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><object class="wcag-fail">
+<img src="../../../Resources/Images/logo.jpg" alt="" height="40" width="120" title="!!@@!!"/>
+</object></xmp></td>
+                </tr> 
+
+                 <tr><td colspan="2"><div><strong>Scenario 6:</strong> Content in the object tag is empty</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet">                       
+                       <p>Empty div is provided in object tag </p>
+<object class="wcag-fail">
+ <div> </div>
+</object>
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><p>Empty div is provided in object tag </p>
+<object class="wcag-fail">
+ <div> </div>
+</object></xmp></td>
+                </tr> 
+
+                 <tr><td colspan="2"><div><strong>Scenario 7:</strong> Content in the object tag is empty using display none</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet">                       
+                       <p>Content inside the object tag is hidden using display:none</p>
+<object class="wcag-fail"><p style="display: none;">This object has no text.</p></object>
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><p>Content inside the object tag is hidden using display:none</p>
+<object class="wcag-fail"><p style="display: none;">This object has no text.</p></object></xmp></td>
                 </tr> 
                 </tbody> </table>
     </div>
