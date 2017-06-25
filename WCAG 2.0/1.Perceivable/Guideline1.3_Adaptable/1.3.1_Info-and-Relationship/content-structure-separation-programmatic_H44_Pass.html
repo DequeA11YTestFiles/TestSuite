@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../favicon.ico">
+
+    <title>H44: Using label elements to associate text labels with form controls</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../Resources/Styles/bootstrap.css" rel="stylesheet">
+    <link href="../../../Resources/Styles/hilighter.css" rel="stylesheet">
+    <!-- Custom scripts for this template -->
+       <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+   <script>
+  $(document).ready(function() {
+    function function1() {
+    // add a click handler to all links
+    // that point to same-page targets (href="#...")
+  $("a[href^='#']").click(function() {
+      // get the href attribute of the internal link
+      // then strip the first character off it (#)
+      // leaving the corresponding id attribute
+      $("#"+$(this).attr("href").slice(1)+"")
+        // give that id focus (for browsers that didn't already do so)
+        .focus()
+        // add a highlight effect to that id (comment out if not using)
+        .effect("highlight", {}, 3000);
+
+    });
+    }
+
+  });
+</script>
+
+
+  </head>
+
+  <body>
+
+        <!-- Begin page content -->
+    <div class="container" id="content">
+     <!-- <div class="page-header"></div>
+       Content Starts here -->
+      <!-- Scenario Start -->
+    <div class="row">
+    <div class="col-md-12">
+
+    <div class="bs-callout bs-callout-info" id="callout-type-dl-truncate"> <h1>H44: Using label elements to associate text labels with form controls</h1> </div>
+
+  
+     <table class="table table-bordered" id="test">
+             <thead>
+              <tr>
+              
+              <th scope="50%" scope="col">HTML Snippet</th>
+              <th width="50%" scope="col">Code</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr><td colspan="2"><div><strong>Scenario 1:</strong> Form element have an Explicit label association</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet wcag-pass">                       
+                  <h1 style="font-size:22px"> Explicit label association for form fields</h1>
+<form> 
+<h2 style="font-size:18px"> 01. Label association for text field</h2>
+<label for="fname">First Name:</label> <input type="text" name="fname" id="fname"><br>
+<label for="lname">Last Name:</label> <input type="text" name="lname" id="lname">
+
+<h2 style="font-size:18px">02.  Llabel association for checkbox</h2>
+<input type="checkbox" id="markuplang" name="computerskills" checked="checked">
+<label for="markuplang">HTML</label>
+
+<h2 style="font-size:18px">03. Llabel association for group of radio buttons</h2>
+<fieldset>
+<legend> Select Gender</legend>
+<input type="radio" name="gender" id="male" value="Male" /><label for="male">Male</label>
+<input type="radio" name="gender" id="female" value="female"/><label for="female">Female</label><br/>
+</fieldset>
+<h2 style="font-size:18px">04. Label association for  input file</h2>
+<label for="fc1">Attach the documents</label><input type="file" id="fc1" value="browse the document" />
+
+<h2 style="font-size:18px">05. Label association for text area</h2>
+<label for="address">Provide the address</label><br/>
+<textarea rows="4" cols="15" id="address"></textarea>
+
+<h2 style="font-size:18px">06. Label association for select</h2>
+<label for="type">Account type</label><br/>
+<select id="type">
+<option>Admin</option>
+<option>User</option>
+</select>
+</form>     
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><h1 style="font-size:22px"> Explicit label association for form fields</h1>
+<form> 
+<h2 style="font-size:18px"> 01. Label association for text field</h2>
+<label for="fname">First Name:</label> <input type="text" name="fname" id="fname"><br>
+<label for="lname">Last Name:</label> <input type="text" name="lname" id="lname">
+
+<h2 style="font-size:18px">02.  Llabel association for checkbox</h2>
+<input type="checkbox" id="markuplang" name="computerskills" checked="checked">
+<label for="markuplang">HTML</label>
+
+<h2 style="font-size:18px">03. Llabel association for group of radio buttons</h2>
+<fieldset>
+<legend> Select Gender</legend>
+<input type="radio" name="gender" id="male" value="Male" /><label for="male">Male</label>
+<input type="radio" name="gender" id="female" value="female"/><label for="female">Female</label><br/>
+</fieldset>
+<h2 style="font-size:18px">04. Label association for  input file</h2>
+<label for="fc1">Attach the documents</label><input type="file" id="fc1" value="browse the document" />
+
+<h2 style="font-size:18px">05. Label association for text area</h2>
+<label for="address">Provide the address</label><br/>
+<textarea rows="4" cols="15" id="address"></textarea>
+
+<h2 style="font-size:18px">06. Label association for select</h2>
+<label for="type">Account type</label><br/>
+<select id="type">
+<option>Admin</option>
+<option>User</option>
+</select>
+</form></xmp></td>
+                </tr> 
+
+                <tr><td colspan="2"><div><strong>Scenario 2:</strong> Form element have an implicit label association</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet wcag-pass">                       
+                <h1 style="font-size:22px"> implicit label association for form fields</h1>
+<form> 
+<h2 style="font-size:18px"> 01. Label association for text field</h2>
+<label>First Name: <input type="text" name="fname"></label><br>
+<label>Last Name: <input type="text" name="lname"></label>
+
+<h2 style="font-size:18px">02.  Label association for checkbox</h2>
+<label><input type="checkbox" name="computerskills" checked="checked">
+HTML</label>
+
+<h2 style="font-size:18px">03. Llabel association for group of radio buttons</h2>
+<fieldset>
+<legend> Select Gender</legend>
+<label><input type="radio" name="gender"  value="Male" />Male</label>
+<label><input type="radio" name="gender"  value="female"/>Female</label><br/>
+</fieldset>
+<h2 style="font-size:18px">04. Label association for input file</h2>
+<label >Attach the documents<input type="file" value="browse the document" /></label>
+
+<h2 style="font-size:18px">05. Label association for text area</h2>
+<label>Provide the address</br>
+<textarea rows="4" cols="15"></textarea>
+</label>
+
+<h2 style="font-size:18px">06. Label association for select</h2>
+<label>Account type<br/>
+<select>
+<option>Admin</option>
+<option>User</option>
+</select>
+</label>
+</form>       
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><h1 style="font-size:22px"> implicit label association for form fields</h1>
+<form> 
+<h2 style="font-size:18px"> 01. Label association for text field</h2>
+<label>First Name: <input type="text" name="fname"></label><br>
+<label>Last Name: <input type="text" name="lname"></label>
+
+<h2 style="font-size:18px">02.  Label association for checkbox</h2>
+<label><input type="checkbox" name="computerskills" checked="checked">
+HTML</label>
+
+<h2 style="font-size:18px">03. Llabel association for group of radio buttons</h2>
+<fieldset>
+<legend> Select Gender</legend>
+<label><input type="radio" name="gender"  value="Male" />Male</label>
+<label><input type="radio" name="gender"  value="female"/>Female</label><br/>
+</fieldset>
+<h2 style="font-size:18px">04. Label association for input file</h2>
+<label >Attach the documents<input type="file" value="browse the document" /></label>
+
+<h2 style="font-size:18px">05. Label association for text area</h2>
+<label>Provide the address</br>
+<textarea rows="4" cols="15"></textarea>
+</label>
+
+<h2 style="font-size:18px">06. Label association for select</h2>
+<label>Account type<br/>
+<select>
+<option>Admin</option>
+<option>User</option>
+</select>
+</label>
+</form></xmp></td>
+                </tr>
+                </tbody> </table>
+    </div>
+
+      </div><!-- /tabbable -->
+      </div>
+      <div class="clearfix"></div>
+      </div>
+    <!-- <div class="page-header"></div> -->
+
+      <!-- Content Ends here -->
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p class="text-muted" style="text-align: center;">Deque Systems, Inc.</p>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="../../../Resources/Scripts/custom.js"></script>
+    <script src="../../../Resources/Scripts/bootstrap.js"></script>
+    <script src="../../../Resources/Scripts/hilighter.js"></script>
+    <script>$.SyntaxHighlighter.init();
+    $('.highlight').attr('max-height', '100px');
+    </script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+  </body>
+</html>
