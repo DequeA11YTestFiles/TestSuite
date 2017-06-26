@@ -133,6 +133,16 @@
       "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_H71_Fail.html",
       "successCriteria": ["wcag20:content-structure-separation-programmatic"],
       "technique": "H71-Fail"
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_F46_Pass.html",
+      "successCriteria": ["wcag20:content-structure-separation-programmatic"],
+      "technique": "F46-Pass"
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_F46_Fail.html",
+      "successCriteria": ["wcag20:content-structure-separation-programmatic"],
+      "technique": "F46-Fail"
     }
   ]
 }
