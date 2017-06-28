@@ -213,6 +213,16 @@
       "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.4_Distinguishable/1.4.3_Contrast(Minimum)/visual-audio-contrast_G18_Fail.html",
       "successCriteria": ["wcag20:visual-audio-contrast"],
       "technique": "G18-Fail"
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.2_Enough-Time/2.2.1_Timing-Adjustable/time-limits_F41_Pass.html",
+      "successCriteria": ["wcag20:time-limits"],
+      "technique": "F41-Pass"
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.2_Enough-Time/2.2.1_Timing-Adjustable/time-limits_F41_Fail.html",
+      "successCriteria": ["wcag20:time-limits"],
+      "technique": "F41-Fail"
     }
   ]
 }
