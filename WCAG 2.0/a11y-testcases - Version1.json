@@ -203,6 +203,16 @@
       "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.4_Distinguishable/1.4.1_use-of-color/visual-audio-contrast_G183_Fail.html",
       "successCriteria": ["wcag20:visual-audio-contrast"],
       "technique": "G183-Fail"
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.4_Distinguishable/1.4.3_Contrast(Minimum)/visual-audio-contrast_G18_Pass.html",
+      "successCriteria": ["wcag20:visual-audio-contrast"],
+      "technique": "G18-Pass"
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.4_Distinguishable/1.4.3_Contrast(Minimum)/visual-audio-contrast_G18_Fail.html",
+      "successCriteria": ["wcag20:visual-audio-contrast"],
+      "technique": "G18-Fail"
     }
   ]
 }
