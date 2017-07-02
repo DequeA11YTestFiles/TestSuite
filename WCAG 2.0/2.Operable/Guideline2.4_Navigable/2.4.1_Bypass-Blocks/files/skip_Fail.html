@@ -1,0 +1,127 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "http://www.w3.org/TR/html4/loose.dtd">
+ <html lang="en">
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+ <title>Changing Image Source in a Device Independent Manner</title>
+ <style type="text/css">
+ #wrapper {
+		width:900px;
+		margin:0px auto;
+		border:1px solid #bbb;
+		padding:10px;
+	}
+  #header {
+		border:1px solid #bbb;
+		height:80px;
+		padding:10px;
+	}
+	#content {
+		margin-top:10px;
+		padding-bottom:10px;
+	}
+	/* applies to all divs within the content div */
+  #content div {
+		padding:10px;
+		border:1px solid #bbb;
+    float:left;
+	}
+  #content-left {
+  	width:180px;
+  	height:300px;
+	}
+  #content-main {
+		margin-left:10px;
+		width:666px;
+		height:150px;
+	}
+  #content-box1, #content-box2, #content-box3 {
+		padding:10px;
+		border:1px solid #bbb;
+    position:absolute;
+    margin-top:190px;
+    height:120px;
+	}
+  #content-box1 {
+		margin-left:212px;
+		width:200px;
+	}
+  #content-box2 {
+		margin-left:444px;
+		width:200px;
+	}
+  #content-box3 {
+		margin-left:676px;
+		width:202px;
+	}
+  #footer {
+		float:left;
+		margin-top:10px;
+		margin-bottom:10px;
+    padding:10px;
+    border:1px solid #bbb;
+    width:878px;
+	}
+  #bottom {
+		clear:both;
+		text-align:right;
+	}
+
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    width: 60px;
+    background-color: #dddddd;
+}
+
+ </style>
+ </head>
+ <body>
+<div id="wrapper">
+
+  <div id="header">
+  <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">About</a></li>
+  <li><a href="#contact">Products</a></li>
+  <li><a href="#about">Services</a></li>
+  <li><a href="#about">News</a></li>
+  <li><a href="#about">Contact</a></li>
+</ul>
+  </div>
+
+  <div id="content-box1"><p>Box 1</p></div>
+  <div id="content-box2"><p>Box 2</p></div>
+  <div id="content-box3"><p>Box 3</p></div>
+
+  <div id="content">
+    <div id="content-left">
+			<p><strong>Quick Links</strong></p>
+			<p>Home</p>
+			<p>About</p>
+			<p>Products</p>
+			<p>Services</p>
+			<p>News</p>
+			<p>Contact</p>
+		</div>
+    <div id="content-main">
+			<p>Main home page content or image goes here...</p>
+		</div>
+  </div>
+
+  <div id="footer">Footer text and links can go all the way along here... text text text text text text...</div>
+  <div id="bottom"></div>
+
+</div>
+ </body>
+ </html>
