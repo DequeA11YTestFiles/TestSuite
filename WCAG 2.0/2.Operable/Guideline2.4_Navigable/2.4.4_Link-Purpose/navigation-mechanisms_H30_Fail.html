@@ -81,7 +81,7 @@
                      <xmp class="highlight"><a href="http://www.deque.com">deque</a>  </xmp></td>
                 </tr>
 
-                <tr><td colspan="2"><div><strong>Scenario 2:</strong> Alternative and link text is not provided for the image to convey the purpose of the element</div></td></tr>
+                <tr><td colspan="2"><div><strong>Scenario 2:</strong> Image without alternate text inside an anchor tag</div></td></tr>
                 <tr class="Examplerow">
                 <td class="htmlSnippet wcag-fail">                       
                   <a href="http://www.deque.com"> <img src="../../../Resources/Images/logo.jpg" height="30" width="70" alt=""/></a>     
@@ -90,7 +90,7 @@
                      <xmp class="highlight"><a href="http://www.deque.com"> <img src="../../../Resources/Images/logo.jpg" height="30" width="70" alt=""/></a> </xmp></td>
                 </tr>
 
-                <tr><td colspan="2"><div><strong>Scenario 3:</strong> Purpose of the link is clear from series of links</div></td></tr>
+                <tr><td colspan="2"><div><strong>Scenario 3:</strong> Link text is not clear</div></td></tr>
                 <tr class="Examplerow">
                 <td class="htmlSnippet wcag-fail">                       
                    <a href="https://www.deque.com/products/amaze/">Learn more</a><br/>
@@ -99,6 +99,26 @@
                      <td class="code"> 
                      <xmp class="highlight"><a href="https://www.deque.com/products/amaze/">Learn more</a><br/>
                   <a href="https://www.deque.com/products/axe/">Learn more</a></xmp></td>
+                </tr>
+
+                <tr><td colspan="2"><div><strong>Scenario 4:</strong> No Visible link text</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet wcag-fail">                       
+                   <a href="https://www.deque.com/products/amaze/"></a>    
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><a href="https://www.deque.com/products/amaze/"></a></xmp></td>
+                </tr>
+
+                <tr><td colspan="2"><div><strong>Scenario 5:</strong> Two different links (with different targets) have same identifying text</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet wcag-fail">                       
+                   <p>Deque has number of a11y products and to know more about deque, do visit <a href="http://www.deque.com">deque</a></p>
+<p>Deque has number of a11y services to offer and to know more about deque, do visit <a href="http://www.google.com">deque</a></p>    
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><p>Deque has number of a11y products and to know more about deque, do visit <a href="http://www.deque.com">deque</a></p>
+<p>Deque has number of a11y services to offer and to know more about deque, do visit <a href="http://www.google.com">deque</a></p></xmp></td>
                 </tr>
                 </tbody> </table>
     </div>
