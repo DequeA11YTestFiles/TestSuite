@@ -333,6 +333,16 @@
       "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.1_Readable/3.1.2_Language-of-Part/meaning_H58_Fail.html",
       "successCriteria": ["wcag20:navigation-meaning"],
       "technique": "H58-Fail"
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.2_Predictable/3.2.1_On-Focus/consistent-behavior_F52_Pass.html",
+      "successCriteria": ["wcag20:consistent-behavior"],
+      "technique": "F52-Pass"
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.2_Predictable/3.2.1_On-Focus/consistent-behavior_F52_Fail.html",
+      "successCriteria": ["wcag20:consistent-behavior"],
+      "technique": "F52-Fail"
     }
   ]
 }
