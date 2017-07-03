@@ -303,6 +303,16 @@
       "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.2_Page-Titled/navigation-mechanisms_G88_Fail.html",
       "successCriteria": ["wcag20:navigation-mechanisms"],
       "technique": "G88-Fail"
-    }
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.3_Focus-Order/navigation-mechanisms_F44_Pass.html",
+      "successCriteria": ["wcag20:navigation-mechanisms"],
+      "technique": "F44-Pass"
+    },
+    {
+     "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.3_Focus-Order/navigation-mechanisms_F44_Fail.html",
+      "successCriteria": ["wcag20:navigation-mechanisms"],
+      "technique": "F44-Fail"
+     }
   ]
 }
