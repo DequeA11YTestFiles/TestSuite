@@ -375,6 +375,16 @@
       "technique": "F52-Fail"
     },
     {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.2_Predictable/3.2.1_On-Focus/consistent-behavior-receive-focus_F55_Pass.html",
+      "successCriteria": ["wcag20:consistent-behavior-receive-focus"],
+      "technique": "F55-Pass"
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.2_Predictable/3.2.1_On-Focus/consistent-behavior-receive-focus_F55_Fail.html",
+      "successCriteria": ["wcag20:consistent-behavior-receive-focus"],
+      "technique": "F55-Fail"
+    },
+    {
       "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/4.Robust/Guideline4.1_Compatable/4.1.1_Parsing/ensure-compat-parses_H74_Pass.html",
       "successCriteria": ["wcag20:ensure-compat-parses"],
       "technique": "H74-Pass"
