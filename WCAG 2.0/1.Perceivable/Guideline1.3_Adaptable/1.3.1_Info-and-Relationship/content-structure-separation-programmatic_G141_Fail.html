@@ -60,14 +60,14 @@
     <div class="row">
     <div class="col-md-12">
 
-    <div class="bs-callout bs-callout-info" id="callout-type-dl-truncate"> <h1>G141: Organizing a page using headings</h1> </div>
+    <div class="bs-callout bs-callout-info" id="callout-type-dl-truncate"> <h1>G141: Heading markup is not provided</h1> </div>
 
   
      <table class="table table-bordered" id="test">
              <thead>
               <tr>
               
-              <th scope="50%" scope="col">HTML Snippet</th>
+              <th width="50%" scope="col">HTML Snippet</th>
               <th width="50%" scope="col">Code</th>
               </tr>
               </thead>
@@ -75,55 +75,29 @@
               <tr><td colspan="2"><div><strong>Scenario 1:</strong> Order of headings is not semantically correct using html markup</div></td></tr>
                 <tr class="Examplerow">
                 <td class="htmlSnippet wcag-fail">                       
-                  <h6> Deque products</h6>
-<h4>1. Worldspace Attest</h4>
-<p><span>Catch 50% of accessibility issues while your site is being developed.</span></p>
-<p><span>Framework integrations and browser plugins to help you incorporate accessibility into your existing development and testing environment.</span></p>
-<h1>Key Features</h1> 
-<ul>
-<li><span>Includes solutions for Unit Testing, Test Automation, and In-Browser testing</span></li>
-<li><span>Integrates with Selenium, QUnit, and other popular testing frameworks</span></li>
-</ul>
-<h5>Target Users</h5>
-<ul>
-<li><span>Front-End Developers</span></li>
-<li><span>Test Engineers</span></li>
-</ul>
-<a href="http://www.deque.com/products/worldspace-attest/">Learn More About WorldSpace Attest</a>
-<h4>2. Worldspace Assure</h4>
-<span>Optimize your accessibility testing, tracking, and reporting.</span>
-<p><span>Step-by-step guidance and report-building to empower your QA team without requiring them all to become accessibility experts.</span></p>
-<h1>Key Features</h1> 
-<ul>
-<li><span>Step-by-step guidance to ensure consistent processes and results</span></li>
-<li><span>Run manual and automated testing in the same interface.</span></li>
-</ul>
-<h3>Target Users</h3>
-<ul>
-<li><span>Accessibility Specialists</span></li>
-</ul>
-<a href="http://www.deque.com/products/worldspace-assure/">Learn More About WorldSpace Assure</a>     
+                  <a href="files/G141_Fail1.html">View Example</a>    
                      </td>
                      <td class="code"> 
-                     <xmp class="highlight"><h6> Deque products</h6>
-<h4>1. Worldspace Attest</h4>
+                     <xmp class="highlight"><div class="wcag-fail">
+<div style="font-size: 18px"> Deque products</div>
+<div style="font-size: 22px">1. Worldspace Attest</div>
 <p><span>Catch 50% of accessibility issues while your site is being developed.</span></p>
 <p><span>Framework integrations and browser plugins to help you incorporate accessibility into your existing development and testing environment.</span></p>
-<h1>Key Features</h1> 
+<div style="font-size: 28px">Key Features</div> 
 <ul>
 <li><span>Includes solutions for Unit Testing, Test Automation, and In-Browser testing</span></li>
 <li><span>Integrates with Selenium, QUnit, and other popular testing frameworks</span></li>
 </ul>
-<h5>Target Users</h5>
+<div style="font-size: 13px">Target Users</div>
 <ul>
 <li><span>Front-End Developers</span></li>
 <li><span>Test Engineers</span></li>
 </ul>
 <a href="http://www.deque.com/products/worldspace-attest/">Learn More About WorldSpace Attest</a>
-<h4>2. Worldspace Assure</h4>
+<div style="font-size: 14px">2. Worldspace Assure</div>
 <span>Optimize your accessibility testing, tracking, and reporting.</span>
 <p><span>Step-by-step guidance and report-building to empower your QA team without requiring them all to become accessibility experts.</span></p>
-<h1>Key Features</h1> 
+<div style="font-size: 22px">Key Features</div> 
 <ul>
 <li><span>Step-by-step guidance to ensure consistent processes and results</span></li>
 <li><span>Run manual and automated testing in the same interface.</span></li>
@@ -135,68 +109,7 @@
 <a href="http://www.deque.com/products/worldspace-assure/">Learn More About WorldSpace Assure</a></xmp></td>
                 </tr> 
 
-                <tr><td colspan="2"><div><strong>Scenario 2:</strong> Order of headings is not semantically correct using aria markup</div></td></tr>
-                <tr class="Examplerow">
-                <td class="htmlSnippet wcag-fail">                       
-                <div role="heading" aria-level="6" style="font-weight:bold;font-size:12px"> Deque products</div>
-<div role="heading" aria-level="1" style="font-weight:bold;font-size:22px">1. Worldspace Attest</div>
-<p><span>Catch 50% of accessibility issues while your site is being developed.</span></p>
-<p><span>Framework integrations and browser plugins to help you incorporate accessibility into your existing development and testing environment.</span></p>
-<div role="heading" aria-level="1" style="font-weight:bold;font-size:22px">Key Features</div> 
-<ul>
-<li><span>Includes solutions for Unit Testing, Test Automation, and In-Browser testing</span></li>
-<li><span>Integrates with Selenium, QUnit, and other popular testing frameworks</span></li>
-</ul>
-<div role="heading" aria-level="5" style="font-weight:bold;font-size:14px">Target Users</div>
-<ul>
-<li><span>Front-End Developers</span></li>
-<li><span>Test Engineers</span></li>
-</ul>
-<a href="http://www.deque.com/products/worldspace-attest/">Learn More About WorldSpace Attest</a>
-<div role="heading" aria-level="4" style="font-weight:bold;font-size:18px">2. Worldspace Assure</div>
-<span>Optimize your accessibility testing, tracking, and reporting.</span>
-<p><span>Step-by-step guidance and report-building to empower your QA team without requiring them all to become accessibility experts.</span></p>
-<div role="heading" aria-level="1" style="font-weight:bold;font-size:22px">Key Features</div> 
-<ul>
-<li><span>Step-by-step guidance to ensure consistent processes and results</span></li>
-<li><span>Run manual and automated testing in the same interface.</span></li>
-</ul>
-<div role="heading" aria-level="3" style="font-weight:bold;font-size:17px">Target Users</div>
-<ul>
-<li><span>Accessibility Specialists</span></li>
-</ul>
-<a href="http://www.deque.com/products/worldspace-assure/">Learn More About WorldSpace Assure</a>       
-                     </td>
-                     <td class="code"> 
-                     <xmp class="highlight"><div role="heading" aria-level="6" style="font-weight:bold;font-size:12px"> Deque products</div>
-<div role="heading" aria-level="1" style="font-weight:bold;font-size:22px">1. Worldspace Attest</div>
-<p><span>Catch 50% of accessibility issues while your site is being developed.</span></p>
-<p><span>Framework integrations and browser plugins to help you incorporate accessibility into your existing development and testing environment.</span></p>
-<div role="heading" aria-level="1" style="font-weight:bold;font-size:22px">Key Features</div> 
-<ul>
-<li><span>Includes solutions for Unit Testing, Test Automation, and In-Browser testing</span></li>
-<li><span>Integrates with Selenium, QUnit, and other popular testing frameworks</span></li>
-</ul>
-<div role="heading" aria-level="5" style="font-weight:bold;font-size:14px">Target Users</div>
-<ul>
-<li><span>Front-End Developers</span></li>
-<li><span>Test Engineers</span></li>
-</ul>
-<a href="http://www.deque.com/products/worldspace-attest/">Learn More About WorldSpace Attest</a>
-<div role="heading" aria-level="4" style="font-weight:bold;font-size:18px">2. Worldspace Assure</div>
-<span>Optimize your accessibility testing, tracking, and reporting.</span>
-<p><span>Step-by-step guidance and report-building to empower your QA team without requiring them all to become accessibility experts.</span></p>
-<div role="heading" aria-level="1" style="font-weight:bold;font-size:22px">Key Features</div> 
-<ul>
-<li><span>Step-by-step guidance to ensure consistent processes and results</span></li>
-<li><span>Run manual and automated testing in the same interface.</span></li>
-</ul>
-<div role="heading" aria-level="3" style="font-weight:bold;font-size:17px">Target Users</div>
-<ul>
-<li><span>Accessibility Specialists</span></li>
-</ul>
-<a href="http://www.deque.com/products/worldspace-assure/">Learn More About WorldSpace Assure</a></xmp></td>
-                </tr>
+                
                 </tbody> </table>
     </div>
 
@@ -226,6 +139,9 @@
     <script>$.SyntaxHighlighter.init();
     $('.highlight').attr('max-height', '100px');
     </script>
+    <style type="text/css">
+      .linenums .atn{color: #666666 !important}
+    </style>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
