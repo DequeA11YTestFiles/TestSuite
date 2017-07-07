@@ -67,7 +67,7 @@
              <thead>
               <tr>
               
-              <th scope="50%" scope="col">HTML Snippet</th>
+              <th width="50%" scope="col">HTML Snippet</th>
               <th width="50%" scope="col">Code</th>
               </tr>
               </thead>
@@ -130,6 +130,28 @@
                      </td>
                      <td class="code"> 
                      <xmp class="highlight">The chemical notation for water is H<sub>2</sub>O.</xmp></td>
+                </tr>
+
+                
+
+                <tr><td colspan="2"><div><strong>Scenario 4:</strong> Provding subscript for the text</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet wcag-pass">                       
+                  The chemical notation for water is H<sub>2</sub>O.
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight">The chemical notation for water is H<sub>2</sub>O.</xmp></td>
+                </tr> 
+
+                <tr><td colspan="2"><div><strong>Scenario 5:</strong> Strong and Em tag is used to emphasized the text</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet wcag-pass">                       
+                  <strong>That defense doesn't work here. When it comes to website accessibility, knowledge is power. Get educated.</strong>
+We offer training courses for every level of expertise and just about every aspect of digital accessibility, including special topics such as <em>Mobile, PDF Accessibility and Flash® Accessibility</em>. Training is available both online and in-person.    
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><strong>That defense doesn't work here. When it comes to website accessibility, knowledge is power. Get educated.</strong>
+We offer training courses for every level of expertise and just about every aspect of digital accessibility, including special topics such as <em>Mobile, PDF Accessibility and Flash® Accessibility</em>. Training is available both online and in-person.</xmp></td>
                 </tr>  
                 </tbody> </table>
     </div>
@@ -160,7 +182,9 @@
     <script>$.SyntaxHighlighter.init();
     $('.highlight').attr('max-height', '100px');
     </script>
-
+    <style type="text/css">
+      .linenums .atn{color: #666666 !important}
+    </style>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
   </body>
