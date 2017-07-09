@@ -67,7 +67,7 @@
              <thead>
               <tr>
               
-              <th scope="50%" scope="col">HTML Snippet</th>
+              <th width="50%" scope="col">HTML Snippet</th>
               <th width="50%" scope="col">Code</th>
               </tr>
               </thead>
@@ -187,6 +187,42 @@
   </div>
   <p><input type="submit" value="Continue" id="continue_btn_chk" name="continue_btn_chk" /></p></xmp></td>
                 </tr>
+
+
+                <tr><td colspan="2"><div><strong>Scenario 5:</strong> Group of text fields are grouped with fieldset and legend</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet wcag-pass">                       
+                <fieldset>
+     <legend>Residential Address</legend>
+     <label for="raddress">Address: </label>
+     <input type="text" id="raddress" name="raddress" />
+     <label for="rzip">Postal/Zip Code: </label>
+     <input type="text" id="rzip" name="rzip" />
+   </fieldset>
+   <fieldset>
+     <legend>Postal Address</legend>
+     <label for="paddress">Address: </label>
+     <input type="text" id="paddress" name="paddress" />
+     <label for="pzip">Postal/Zip Code: </label>
+     <input type="text" id="pzip" name="pzip" />
+   </fieldset>       
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><fieldset>
+     <legend>Residential Address</legend>
+     <label for="raddress">Address: </label>
+     <input type="text" id="raddress" name="raddress" />
+     <label for="rzip">Postal/Zip Code: </label>
+     <input type="text" id="rzip" name="rzip" />
+   </fieldset>
+   <fieldset>
+     <legend>Postal Address</legend>
+     <label for="paddress">Address: </label>
+     <input type="text" id="paddress" name="paddress" />
+     <label for="pzip">Postal/Zip Code: </label>
+     <input type="text" id="pzip" name="pzip" />
+   </fieldset></xmp></td>
+                </tr>
                 </tbody> </table>
     </div>
 
@@ -216,6 +252,9 @@
     <script>$.SyntaxHighlighter.init();
     $('.highlight').attr('max-height', '100px');
     </script>
+    <style type="text/css">
+      .linenums .atn{color: #666666 !important}
+    </style>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
