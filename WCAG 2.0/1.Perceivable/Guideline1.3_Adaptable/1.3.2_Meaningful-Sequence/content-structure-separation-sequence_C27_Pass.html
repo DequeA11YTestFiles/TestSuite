@@ -67,34 +67,34 @@
              <thead>
               <tr>
               
-              <th scope="50%" scope="col">HTML Snippet</th>
+              <th width="50%" scope="col">HTML Snippet</th>
               <th width="50%" scope="col">Code</th>
               </tr>
               </thead>
               <tbody>
-              <tr><td colspan="2"><div><strong>Scenario 1:</strong> Focus Order is not same as DOM Order</div></td></tr>
+              <tr><td colspan="2"><div><strong>Scenario 1:</strong> Focus Order is same as DOM Order</div></td></tr>
                 <tr class="Examplerow">
-                <td class="htmlSnippet wcag-fail">                       
+                <td class="htmlSnippet wcag-pass">                       
                   <div style="width:50%;height:auto;float:left;text-align: right;">
-<label for="fname" >First Name </label> <input id="fname" type="text" tabindex="0"/><br />
-<label for="lname" >Last Name </label> <input id="lname" type="text" tabindex="2"/><br />
-<label for="em" >Email </label> <input id="em" type="text" tabindex="4"/><br />
+<label for="fname" >First Name </label> <input id="fname" type="text"/><br />
+<label for="lname" >Last Name </label> <input id="lname" type="text" /><br />
+<label for="em" >Email </label> <input id="em" type="text"/><br />
 </div>
 <div style="width:50%;height:auto;float:right;text-align: right;">
-<label for="mname" >Middle Name </label> <input id="mname" type="text" tabindex="1"/><br />
-<label for="con" >Contact </label> <input id="con" type="text" tabindex="3"/><br />
+<label for="mname" >Middle Name </label> <input id="mname" type="text"/><br />
+<label for="con" >Contact </label> <input id="con" type="text"/><br />
 </div>     
                      </td>
                      <td class="code"> 
                      <xmp class="highlight"><div style="width:50%;height:auto;float:left;text-align: right;">
-<label for="fname" >First Name </label> <input id="fname" type="text" tabindex="0"/><br />
-<label for="lname" >Last Name </label> <input id="lname" type="text" tabindex="2"/><br />
-<label for="em" >Email </label> <input id="em" type="text" tabindex="4"/><br />
+<label for="fname" >First Name </label> <input id="fname" type="text"/><br />
+<label for="lname" >Last Name </label> <input id="lname" type="text" /><br />
+<label for="em" >Email </label> <input id="em" type="text"/><br />
 </div>
 <div style="width:50%;height:auto;float:right;text-align: right;">
-<label for="mname" >Middle Name </label> <input id="mname" type="text" tabindex="1"/><br />
-<label for="con" >Contact </label> <input id="con" type="text" tabindex="3"/><br />
-</div>     </xmp></td>
+<label for="mname" >Middle Name </label> <input id="mname" type="text"/><br />
+<label for="con" >Contact </label> <input id="con" type="text"/><br />
+</div></xmp></td>
                 </tr> 
                 </tbody> </table>
     </div>
@@ -125,7 +125,9 @@
     <script>$.SyntaxHighlighter.init();
     $('.highlight').attr('max-height', '100px');
     </script>
-
+<style type="text/css">
+      .linenums .atn{color: #666666 !important}
+    </style>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
   </body>
