@@ -67,19 +67,28 @@
              <thead>
               <tr>
               
-              <th scope="50%" scope="col">HTML Snippet</th>
+              <th width="50%" scope="col">HTML Snippet</th>
               <th width="50%" scope="col">Code</th>
               </tr>
               </thead>
               <tbody>
-              <tr><td colspan="2"><div><strong>Scenario 1:</strong> Image that flashes for more than 3 times in a second</div></td></tr>
+              <tr><td colspan="2"><div><strong>Scenario 1:</strong> Image that flashes for less than 3 times in a second</div></td></tr>
                 <tr class="Examplerow">
-                <td class="htmlSnippet wcag-fail">                       
-                  <img src="../../../Resources/Images/Flashing-Image.gif" width="100" height="100" alt="Fail Three Falshing"/>     
+                <td class="htmlSnippet wcag-pass">                       
+                  <img src="../../../Resources/Images/Flashing-Image_pass.gif" width="100" height="100" alt="Pass Three Falshing"/>     
                      </td>
                      <td class="code"> 
-                     <xmp class="highlight"><img src="../../../Resources/Images/Flashing-Image.gif" width="100" height="100" alt="Fail Three Falshing"/> </xmp></td>
+                     <xmp class="highlight"><img src="../../../Resources/Images/Flashing-Image_pass.gif" width="100" height="100" alt="Pass Three Falshing"/></xmp></td>
                 </tr> 
+
+                <tr><td colspan="2"><div><strong>Scenario 2:</strong> Image that flashes for more than 3 times in a second but in lower threshold, note the width and height of the flashy image is changed below</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet wcag-pass">                       
+                  <img src="../../../Resources/Images/Flashing-Image_pass.gif" width="10" height="10" alt="Pass Three Falshing"/>     
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><img src="../../../Resources/Images/Flashing-Image_pass.gif" width="10" height="10" alt="Pass Three Falshing"/></xmp></td>
+                </tr>
                 </tbody> </table>
     </div>
 
@@ -109,6 +118,9 @@
     <script>$.SyntaxHighlighter.init();
     $('.highlight').attr('max-height', '100px');
     </script>
+<style type="text/css">
+      .linenums .atn{color: #666666 !important}
+    </style>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->

@@ -245,13 +245,13 @@
       "technique": "F47-Fail"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.3_Seizures/2.3.1_Three-Flashes-or-Below-Threshold/seizure_G19_Pass.html",
-      "successCriteria": ["wcag20:seizure"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.3_Seizures/2.3.1_Three-Flashes-or-Below-Threshold/seizure-does-not-violate_G19_Pass.html",
+      "successCriteria": ["wcag20:seizure-does-not-violate"],
       "technique": "G19-Pass"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.3_Seizures/2.3.1_Three-Flashes-or-Below-Threshold/seizure_G19_Fail.html",
-      "successCriteria": ["wcag20:seizure"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.3_Seizures/2.3.1_Three-Flashes-or-Below-Threshold/seizure-does-not-violate_G19_Fail.html",
+      "successCriteria": ["wcag20:seizure-does-not-violate"],
       "technique": "G19-Fail"
     }
   ]
