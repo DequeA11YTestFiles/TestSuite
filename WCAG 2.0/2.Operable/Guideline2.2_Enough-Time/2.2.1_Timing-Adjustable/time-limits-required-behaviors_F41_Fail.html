@@ -67,23 +67,24 @@
              <thead>
               <tr>
               
-              <th scope="50%" scope="col">HTML Snippet</th>
+              <th width="50%" scope="col">HTML Snippet</th>
               <th width="50%" scope="col">Code</th>
               </tr>
               </thead>
               <tbody>
-              <tr><td colspan="2"><div><strong>Scenario 1:</strong> Page without meta refresh</div></td></tr>
+              <tr><td colspan="2"><div><strong>Scenario 1:</strong> Page with meta refresh</div></td></tr>
                 <tr class="Examplerow">
-                <td class="htmlSnippet wcag-pass">                       
-                  <a href="files/meta_refresh_Pass.htm">View Example</a>     
+                <td class="htmlSnippet wcag-fail">                       
+                  <a href="files/meta_refresh_Fail.htm">View Example</a>    
                      </td>
                      <td class="code"> 
                      <xmp class="highlight"><html id="divPrw" lang="en"><head>
-<title>Page without meta refresh</title>
+<title>Page with meta refresh</title>
+<meta http-equiv="refresh" content="20" />
 </head>
 <body>
 <h1 style="font-size:20px">Welcome to Deque test Application</h1>
-<p>This example demonstrate without meta refresh content</p> 
+<p>This example demonstrate refreshing the page after 20 seconds </p> 
 </body></html></xmp></td>
                 </tr> 
                 </tbody> </table>
@@ -115,6 +116,9 @@
     <script>$.SyntaxHighlighter.init();
     $('.highlight').attr('max-height', '100px');
     </script>
+<style type="text/css">
+      .linenums .atn{color: #666666 !important}
+    </style>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->

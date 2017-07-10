@@ -215,13 +215,13 @@
       "technique": "G18-Fail"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.2_Enough-Time/2.2.1_Timing-Adjustable/time-limits_F41_Pass.html",
-      "successCriteria": ["wcag20:time-limits"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.2_Enough-Time/2.2.1_Timing-Adjustable/time-limits-required-behaviors_F41_Pass.html",
+      "successCriteria": ["wcag20:time-limits-required-behaviors"],
       "technique": "F41-Pass"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.2_Enough-Time/2.2.1_Timing-Adjustable/time-limits_F41_Fail.html",
-      "successCriteria": ["wcag20:time-limits"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.2_Enough-Time/2.2.1_Timing-Adjustable/time-limits-required-behaviors_F41_Fail.html",
+      "successCriteria": ["wcag20:time-limits-required-behaviors"],
       "technique": "F41-Fail"
     },
     {
