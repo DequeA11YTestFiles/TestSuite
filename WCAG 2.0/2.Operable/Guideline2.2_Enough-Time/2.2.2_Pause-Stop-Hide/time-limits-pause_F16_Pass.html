@@ -47,6 +47,7 @@
   });
 </script>
 
+
   </head>
 
   <body>
@@ -66,18 +67,22 @@
              <thead>
               <tr>
               
-              <th scope="50%" scope="col">HTML Snippet</th>
+              <th width="50%" scope="col">HTML Snippet</th>
               <th width="50%" scope="col">Code</th>
               </tr>
               </thead>
               <tbody>
-              <tr><td colspan="2"><div><strong>Scenario 1:</strong> Play pause stop mechanism is not provided for scrolling content</div></td></tr>
+              <tr><td colspan="2"><div><strong>Scenario 1:</strong> Play pause stop mechanism is provided for scrolling content</div></td></tr>
                 <tr class="Examplerow">
-                <td class="htmlSnippet wcag-fail">                       
-                 <marquee behavior="scroll" direction="left" id="mymarquee">Welcome to Deque Software Pvt Ltd</marquee>
+                <td class="htmlSnippet wcag-pass">                       
+                  <marquee behavior="scroll" direction="left" id="mymarquee">Welcome to Deque Software Pvt Ltd</marquee>
+                 <input type="button" value="pause" onClick="document.getElementById('mymarquee').stop();">
+<input type="button" value="play" onClick="document.getElementById('mymarquee').start();">     
                      </td>
                      <td class="code"> 
-                     <xmp class="highlight"><marquee behavior="scroll" direction="left" id="mymarquee">Welcome to Deque Software Pvt Ltd</marquee></xmp></td>
+                     <xmp class="highlight"><marquee behavior="scroll" direction="left" id="mymarquee">Welcome to Deque Software Pvt Ltd</marquee>
+                 <input type="button" value="pause" onClick="document.getElementById('mymarquee').stop();">
+<input type="button" value="play" onClick="document.getElementById('mymarquee').start();"></xmp></td>
                 </tr> 
                 </tbody> </table>
     </div>
@@ -108,6 +113,9 @@
     <script>$.SyntaxHighlighter.init();
     $('.highlight').attr('max-height', '100px');
     </script>
+<style type="text/css">
+      .linenums .atn{color: #666666 !important}
+    </style>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
