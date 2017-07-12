@@ -325,13 +325,13 @@
       "technique": "H57-Fail"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.1_Readable/3.1.2_Language-of-Part/meaning_H58_Pass.html",
-      "successCriteria": ["wcag20:meaning"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.1_Readable/3.1.2_Language-of-Part/meaning-other-lang-id_H58_Pass.html",
+      "successCriteria": ["wcag20:meaning-other-lang-id"],
       "technique": "H58-Pass"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.1_Readable/3.1.2_Language-of-Part/meaning_H58_Fail.html",
-      "successCriteria": ["wcag20:meaning"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.1_Readable/3.1.2_Language-of-Part/meaning-other-lang-id_H58_Fail.html",
+      "successCriteria": ["wcag20:meaning-other-lang-id"],
       "technique": "H58-Fail"
     }
   ]
