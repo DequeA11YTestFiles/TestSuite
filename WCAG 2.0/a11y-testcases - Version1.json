@@ -185,13 +185,13 @@
       "technique": "H42-Fail"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.2_Meaningful-Sequence/content-structure-separation-programmatic_C27_Pass.html",
-      "successCriteria": ["wcag20:content-structure-separation-programmatic"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.2_Meaningful-Sequence/content-structure-separation-sequence_C27_Pass.html",
+      "successCriteria": ["wcag20:content-structure-separation-sequence"],
       "technique": "C27-Pass"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_C27_Fail.html",
-      "successCriteria": ["wcag20:content-structure-separation-programmatic"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-sequence_C27_Fail.html",
+      "successCriteria": ["wcag20:content-structure-separation-sequence"],
       "technique": "C27-Fail"
     },
     {
@@ -205,73 +205,73 @@
       "technique": "G183-Fail"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.4_Distinguishable/1.4.3_Contrast(Minimum)/visual-audio-contrast_G18_Pass.html",
-      "successCriteria": ["wcag20:visual-audio-contrast"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.4_Distinguishable/1.4.3_Contrast(Minimum)/visual-audio-contrast-contrast_G18_Pass.html",
+      "successCriteria": ["wcag20:visual-audio-contrast-contrast"],
       "technique": "G18-Pass"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.4_Distinguishable/1.4.3_Contrast(Minimum)/visual-audio-contrast_G18_Fail.html",
-      "successCriteria": ["wcag20:visual-audio-contrast"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.4_Distinguishable/1.4.3_Contrast(Minimum)/visual-audio-contrast-contrast_G18_Fail.html",
+      "successCriteria": ["wcag20:visual-audio-contrast-contrast"],
       "technique": "G18-Fail"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.2_Enough-Time/2.2.1_Timing-Adjustable/time-limits_F41_Pass.html",
-      "successCriteria": ["wcag20:time-limits"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.2_Enough-Time/2.2.1_Timing-Adjustable/time-limits-required-behaviors_F41_Pass.html",
+      "successCriteria": ["wcag20:time-limits-required-behaviors"],
       "technique": "F41-Pass"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.2_Enough-Time/2.2.1_Timing-Adjustable/time-limits_F41_Fail.html",
-      "successCriteria": ["wcag20:time-limits"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.2_Enough-Time/2.2.1_Timing-Adjustable/time-limits-required-behaviors_F41_Fail.html",
+      "successCriteria": ["wcag20:time-limits-required-behaviors"],
       "technique": "F41-Fail"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.2_Enough-Time/2.2.2_Pause-Stop-Hide/time-limits_F16_Pass.html",
-      "successCriteria": ["wcag20:time-limits"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.2_Enough-Time/2.2.2_Pause-Stop-Hide/time-limits-pause_F16_Pass.html",
+      "successCriteria": ["wcag20:time-limits-pause"],
       "technique": "F16-Pass"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.2_Enough-Time/2.2.2_Pause-Stop-Hide/time-limits_F16_Fail.html",
-      "successCriteria": ["wcag20:time-limits"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.2_Enough-Time/2.2.2_Pause-Stop-Hide/time-limits-pause_F16_Fail.html",
+      "successCriteria": ["wcag20:time-limits-pause"],
       "technique": "F16-Fail"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.2_Enough-Time/2.2.2_Pause-Stop-Hide/time-limits_F47_Pass.html",
-      "successCriteria": ["wcag20:time-limits"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.2_Enough-Time/2.2.2_Pause-Stop-Hide/time-limits-pause_F47_Pass.html",
+      "successCriteria": ["wcag20:time-limits-pause"],
       "technique": "F47-Pass"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.2_Enough-Time/2.2.2_Pause-Stop-Hide/time-limits_F47_Fail.html",
-      "successCriteria": ["wcag20:time-limits"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.2_Enough-Time/2.2.2_Pause-Stop-Hide/time-limits-pause_F47_Fail.html",
+      "successCriteria": ["wcag20:time-limits-pause"],
       "technique": "F47-Fail"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.3_Seizures/2.3.1_Three-Flashes-or-Below-Threshold/seizure_G19_Pass.html",
-      "successCriteria": ["wcag20:seizure"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.3_Seizures/2.3.1_Three-Flashes-or-Below-Threshold/seizure-does-not-violate_G19_Pass.html",
+      "successCriteria": ["wcag20:seizure-does-not-violate"],
       "technique": "G19-Pass"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.3_Seizures/2.3.1_Three-Flashes-or-Below-Threshold/seizure_G19_Fail.html",
-      "successCriteria": ["wcag20:seizure"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.3_Seizures/2.3.1_Three-Flashes-or-Below-Threshold/seizure-does-not-violate_G19_Fail.html",
+      "successCriteria": ["wcag20:seizure-does-not-violate"],
       "technique": "G19-Fail"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.1_Bypass-Blocks/navigation-mechanisms_G123_Pass.html",
-      "successCriteria": ["wcag20:navigation-mechanisms"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.1_Bypass-Blocks/navigation-mechanisms-skip_G123_Pass.html",
+      "successCriteria": ["wcag20:navigation-mechanisms-skip"],
       "technique": "G123-Pass"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.1_Bypass-Blocks/navigation-mechanisms_G123_Fail.html",
-      "successCriteria": ["wcag20:navigation-mechanisms"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.1_Bypass-Blocks/navigation-mechanisms-skip_G123_Fail.html",
+      "successCriteria": ["wcag20:navigation-mechanisms-skip"],
       "technique": "G123-Fail"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.1_Bypass-Blocks/navigation-mechanisms_G1_Pass.html",
-      "successCriteria": ["wcag20:navigation-mechanisms"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.1_Bypass-Blocks/navigation-mechanisms-skip_G1_Pass.html",
+      "successCriteria": ["wcag20:navigation-mechanisms-skip"],
       "technique": "G1-Pass"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.1_Bypass-Blocks/navigation-mechanisms_G1_Fail.html",
-      "successCriteria": ["wcag20:navigation-mechanisms"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.1_Bypass-Blocks/navigation-mechanisms-skip_G1_Fail.html",
+      "successCriteria": ["wcag20:navigation-mechanisms-skip"],
       "technique": "G1-Fail"
     },
     {
@@ -285,33 +285,33 @@
       "technique": "H64-Fail"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.2_Page-Titled/navigation-mechanisms_F25_Pass.html",
-      "successCriteria": ["wcag20:navigation-mechanisms"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.2_Page-Titled/navigation-mechanisms-title_F25_Pass.html",
+      "successCriteria": ["wcag20:navigation-mechanisms-title"],
       "technique": "F25-Pass"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.2_Page-Titled/navigation-mechanisms_F25_Fail.html",
-      "successCriteria": ["wcag20:navigation-mechanisms"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.2_Page-Titled/navigation-mechanisms-title_F25_Fail.html",
+      "successCriteria": ["wcag20:navigation-mechanisms-title"],
       "technique": "F25-Fail"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.2_Page-Titled/navigation-mechanisms_G88_Pass.html",
-      "successCriteria": ["wcag20:navigation-mechanisms"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.2_Page-Titled/navigation-mechanisms-title_G88_Pass.html",
+      "successCriteria": ["wcag20:navigation-mechanisms-title"],
       "technique": "G88-Pass"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.2_Page-Titled/navigation-mechanisms_G88_Fail.html",
-      "successCriteria": ["wcag20:navigation-mechanisms"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.2_Page-Titled/navigation-mechanisms-title_G88_Fail.html",
+      "successCriteria": ["wcag20:navigation-mechanisms-title"],
       "technique": "G88-Fail"
     },
     {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.3_Focus-Order/navigation-mechanisms_F44_Pass.html",
-      "successCriteria": ["wcag20:navigation-mechanisms"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.3_Focus-Order/navigation-mechanisms-focus-order_F44_Pass.html",
+      "successCriteria": ["wcag20:navigation-mechanisms-focus-order"],
       "technique": "F44-Pass"
     },
     {
-     "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.3_Focus-Order/navigation-mechanisms_F44_Fail.html",
-      "successCriteria": ["wcag20:navigation-mechanisms"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.3_Focus-Order/navigation-mechanisms-focus-order_F44_Fail.html",
+      "successCriteria": ["wcag20:navigation-mechanisms-focus-order"],
       "technique": "F44-Fail"
      },
      {
@@ -323,6 +323,101 @@
       "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.1_Readable/3.1.1_Language-of-Page/meaning-doc-lang-id_H57_Fail.html",
       "successCriteria": ["wcag20:meaning-doc-lang-id"],
       "technique": "H57-Fail"
+    },
+    {
+     "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.4_Link-Purpose/navigation-mechanisms-refs_H30_Fail.html",
+      "successCriteria": ["wcag20:navigation-mechanisms-refs"],
+      "technique": "H30-Fail"
+     },
+     {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.4_Link-Purpose/navigation-mechanisms_H77_Pass.html",
+      "successCriteria": ["wcag20:navigation-mechanisms"],
+      "technique": "H77-Pass"
+    },
+    {
+     "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.4_Link-Purpose/navigation-mechanisms_H77_Fail.html",
+      "successCriteria": ["wcag20:navigation-mechanisms"],
+      "technique": "H77-Fail"
+     },
+     {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.4_Link-Purpose/navigation-mechanisms-refs_H78_Pass.html",
+      "successCriteria": ["wcag20:navigation-mechanisms-refs"],
+      "technique": "H78-Pass"
+    },
+    {
+     "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.4_Link-Purpose/navigation-mechanisms-refs_H78_Fail.html",
+      "successCriteria": ["wcag20:navigation-mechanisms-refs"],
+      "technique": "H78-Fail"
+     },
+     {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.1_Readable/3.1.1_Language-of-Page/meaning_H57_Pass.html",
+      "successCriteria": ["wcag20:meaning"],
+      "technique": "H57-Pass"
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.1_Readable/3.1.1_Language-of-Page/meaning-doc-lang-id_H57_Fail.html",
+      "successCriteria": ["wcag20:meaning-doc-lang-id"],
+      "technique": "H57-Fail"
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.1_Readable/3.1.2_Language-of-Part/meaning_H58_Pass.html",
+      "successCriteria": ["wcag20:meaning"],
+      "technique": "H58-Pass"
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.1_Readable/3.1.2_Language-of-Part/meaning_H58_Fail.html",
+      "successCriteria": ["wcag20:meaning"],
+      "technique": "H58-Fail"
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.2_Predictable/3.2.1_On-Focus/consistent-behavior_F52_Pass.html",
+      "successCriteria": ["wcag20:consistent-behavior"],
+      "technique": "F52-Pass"
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.2_Predictable/3.2.1_On-Focus/consistent-behavior_F52_Fail.html",
+      "successCriteria": ["wcag20:consistent-behavior"],
+      "technique": "F52-Fail"
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.2_Predictable/3.2.1_On-Focus/consistent-behavior-receive-focus_F55_Pass.html",
+      "successCriteria": ["wcag20:consistent-behavior-receive-focus"],
+      "technique": "F55-Pass"
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.2_Predictable/3.2.1_On-Focus/consistent-behavior-receive-focus_F55_Fail.html",
+      "successCriteria": ["wcag20:consistent-behavior-receive-focus"],
+      "technique": "F55-Fail"
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.2_Predictable/3.2.1_On-Focus/consistent-behavior-receive-focus_G107_Pass.html",
+      "successCriteria": ["wcag20:consistent-behavior-receive-focus"],
+      "technique": "G107-Pass"
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.2_Predictable/3.2.1_On-Focus/consistent-behavior-receive-focus_G107_Fail.html",
+      "successCriteria": ["wcag20:consistent-behavior-receive-focus"],
+      "technique": "G107-Fail"
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/4.Robust/Guideline4.1_Compatable/4.1.1_Parsing/ensure-compat-parses_H74_Pass.html",
+      "successCriteria": ["wcag20:ensure-compat-parses"],
+      "technique": "H74-Pass"
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/4.Robust/Guideline4.1_Compatable/4.1.1_Parsing/ensure-compat-parses_H74_Fail.html",
+      "successCriteria": ["wcag20:ensure-compat-parses"],
+      "technique": "H74-Fail"
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/4.Robust/Guideline4.1_Compatable/4.1.1_Parsing/ensure-compat-parses_H93_Pass.html",
+      "successCriteria": ["wcag20:ensure-compat-parses"],
+      "technique": "H93-Pass"
+    },
+    {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/4.Robust/Guideline4.1_Compatable/4.1.1_Parsing/ensure-compat-parses_H93_Fail.html",
+      "successCriteria": ["wcag20:ensure-compat-parses"],
+      "technique": "H93-Fail"
     }
   ]
 }

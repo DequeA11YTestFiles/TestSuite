@@ -67,12 +67,162 @@
              <thead>
               <tr>
               
-              <th scope="50%" scope="col">HTML Snippet</th>
+              <th width="50%" scope="col">HTML Snippet</th>
               <th width="50%" scope="col">Code</th>
               </tr>
               </thead>
               <tbody>
-              <tr><td colspan="2"><div><strong>Scenario 1:</strong> Table data cells improper association with two headers</div></td></tr>
+              
+              <tr><td colspan="2"><div><strong>Scenario 1:</strong> Table data cells has improper association with two headers</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet wcag-pass">                       
+                 <table summary="Wholesale and retail prices of imported and domestic oranges and apples in Sydney and Melbourne. There are two levels of column headings." border="1">
+   <caption style="color:blue;">
+      Imported and domestic orange and apple prices in Sydney and Melbourne
+   </caption>
+   <thead>
+
+      <tr>
+         <td></td>
+         <th colspan="2" id="imported">Imported</th>
+         <th colspan="2" id="domestic">Domestic</th>
+
+      </tr>
+      <tr>
+         <td></td>
+         <th id="oranges-imp">Oranges</th>
+         <th id="apples-imp">Apples</th>
+
+         <th id="oranges-dom">Oranges</th>
+         <th id="apples-dom">Apples</th>
+      </tr>
+   </thead>
+   <tbody>
+
+      <tr>
+         <th id="sydney" colspan="5">Sydney</th>
+      </tr>
+      <tr>
+
+         <th headers="sydney" id="wholesale-sydney">Wholesale</th>
+         <td headers="imported apples-imp sydney wholesale-sydney">$1.00</td>
+         <td headers="imported oranges-imp sydney wholesale-sydney">$1.25</td>
+         <td headers="domestic oranges-dom sydney wholesale-sydney">$1.20</td>
+
+         <td headers="domestic apples-dom sydney wholesale-sydney">$1.00</td>
+      </tr>
+      <tr>
+         <th headers="sydney" id="retail-sydney">Retail</th>
+         <td headers="imported apples-imp sydney wholesale-sydney">
+     $2.00</td>
+         <td headers="imported oranges-imp sydney wholesale-sydney">
+     $3.25</td>
+         <td headers="domestic oranges-dom sydney wholesale-sydney">
+     $1.80</td>
+
+         <td headers="domestic apples-dom sydney wholesale-sydney">
+     $1.60</td></tr>
+          <tr>
+         <th id="melbourne" colspan="5">Melbourne</th>
+      </tr>
+      <tr>
+
+         <th headers="melbourne" id="wholesale-melbourne">Wholesale</th>
+         <td headers="imported apples-imp melbourne wholesale-melbourne">$1.00</td>
+         <td headers="imported oranges-imp melbourne wholesale-melbourne">$1.25</td>
+         <td headers="domestic oranges-dom melbourne wholesale-melbourne">$1.20</td>
+
+         <td headers="domestic apples-dom melbourne wholesale-melbourne">$1.00</td>
+      </tr>
+      <tr>
+         <th headers="melbourne" id="retail-melbourne">Retail</th>
+         <td headers="imported apples-imp melbourne retail-melbourne">
+     $2.00</td>
+         <td headers="imported oranges-imp melbourne retail-melbourne">
+     $3.25</td>
+         <td headers="domestic oranges-dom melbourne retail-melbourne">
+     $1.80</td>
+
+         <td headers="domestic apples-dom melbourne retail-melbourne">
+     $1.60</td></tr>
+     </tbody>
+     </table>       
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><table summary="Wholesale and retail prices of imported and domestic oranges and apples in Sydney and Melbourne. There are two levels of column headings." border="1">
+   <caption style="color:blue;">
+      Imported and domestic orange and apple prices in Sydney and Melbourne
+   </caption>
+   <thead>
+
+      <tr>
+         <td></td>
+         <th colspan="2" id="imported">Imported</th>
+         <th colspan="2" id="domestic">Domestic</th>
+
+      </tr>
+      <tr>
+         <td></td>
+         <th id="oranges-imp">Oranges</th>
+         <th id="apples-imp">Apples</th>
+
+         <th id="oranges-dom">Oranges</th>
+         <th id="apples-dom">Apples</th>
+      </tr>
+   </thead>
+   <tbody>
+
+      <tr>
+         <th id="sydney" colspan="5">Sydney</th>
+      </tr>
+      <tr>
+
+         <th headers="sydney" id="wholesale-sydney">Wholesale</th>
+         <td headers="imported apples-imp sydney wholesale-sydney">$1.00</td>
+         <td headers="imported oranges-imp sydney wholesale-sydney">$1.25</td>
+         <td headers="domestic oranges-dom sydney wholesale-sydney">$1.20</td>
+
+         <td headers="domestic apples-dom sydney wholesale-sydney">$1.00</td>
+      </tr>
+      <tr>
+         <th headers="sydney" id="retail-sydney">Retail</th>
+         <td headers="imported apples-imp sydney wholesale-sydney">
+     $2.00</td>
+         <td headers="imported oranges-imp sydney wholesale-sydney">
+     $3.25</td>
+         <td headers="domestic oranges-dom sydney wholesale-sydney">
+     $1.80</td>
+
+         <td headers="domestic apples-dom sydney wholesale-sydney">
+     $1.60</td></tr>
+          <tr>
+         <th id="melbourne" colspan="5">Melbourne</th>
+      </tr>
+      <tr>
+
+         <th headers="melbourne" id="wholesale-melbourne">Wholesale</th>
+         <td headers="imported apples-imp melbourne wholesale-melbourne">$1.00</td>
+         <td headers="imported oranges-imp melbourne wholesale-melbourne">$1.25</td>
+         <td headers="domestic oranges-dom melbourne wholesale-melbourne">$1.20</td>
+
+         <td headers="domestic apples-dom melbourne wholesale-melbourne">$1.00</td>
+      </tr>
+      <tr>
+         <th headers="melbourne" id="retail-melbourne">Retail</th>
+         <td headers="imported apples-imp melbourne retail-melbourne">
+     $2.00</td>
+         <td headers="imported oranges-imp melbourne retail-melbourne">
+     $3.25</td>
+         <td headers="domestic oranges-dom melbourne retail-melbourne">
+     $1.80</td>
+
+         <td headers="domestic apples-dom melbourne retail-melbourne">
+     $1.60</td></tr>
+     </tbody>
+     </table></xmp></td>
+                </tr> 
+
+                <tr><td colspan="2"><div><strong>Scenario 2:</strong> Table data cells do not have header association</div></td></tr>
                 <tr class="Examplerow">
                 <td class="htmlSnippet wcag-fail">                       
                 <table summary="Wholesale and retail prices of
@@ -85,27 +235,27 @@
 
       <tr>
          <td></td>
-         <th colspan="2">Imported</th>
-         <th colspan="2">Domestic</th>
+         <td colspan="2">Imported</td>
+         <td colspan="2">Domestic</td>
 
       </tr>
       <tr>
          <td></td>
-         <th>Oranges</th>
-         <th>Apples</th>
+         <td>Oranges</td>
+         <td>Apples</td>
 
-         <th>Oranges</th>
-         <th>Apples</th>
+         <td>Oranges</td>
+         <td>Apples</td>
       </tr>
    </thead>
    <tbody>
 
       <tr>
-         <th colspan="5">Sydney</th>
+         <td colspan="5">Sydney</td>
       </tr>
       <tr>
 
-         <th>Wholesale</th>
+         <td>Wholesale</td>
          <td>$1.00</td>
          <td>$1.25</td>
          <td>$1.20</td>
@@ -113,7 +263,7 @@
          <td>$1.00</td>
       </tr>
       <tr>
-         <th>Retail</th>
+         <td>Retail</td>
          <td>
      $2.00</td>
          <td>
@@ -124,11 +274,11 @@
          <td>
      $1.60</td></tr>
           <tr>
-         <th>Melbourne</th>
+         <td>Melbourne</td>
       </tr>
       <tr>
 
-         <th>Wholesale</th>
+         <td>Wholesale</td>
          <td>$1.00</td>
          <td>$1.25</td>
          <td>$1.20</td>
@@ -136,7 +286,7 @@
          <td>$1.00</td>
       </tr>
       <tr>
-         <th>Retail</th>
+         <td>Retail</td>
          <td>
      $2.00</td>
          <td>
@@ -160,27 +310,27 @@
 
       <tr>
          <td></td>
-         <th colspan="2">Imported</th>
-         <th colspan="2">Domestic</th>
+         <td colspan="2">Imported</td>
+         <td colspan="2">Domestic</td>
 
       </tr>
       <tr>
          <td></td>
-         <th>Oranges</th>
-         <th>Apples</th>
+         <td>Oranges</td>
+         <td>Apples</td>
 
-         <th>Oranges</th>
-         <th>Apples</th>
+         <td>Oranges</td>
+         <td>Apples</td>
       </tr>
    </thead>
    <tbody>
 
       <tr>
-         <th colspan="5">Sydney</th>
+         <td colspan="5">Sydney</td>
       </tr>
       <tr>
 
-         <th>Wholesale</th>
+         <td>Wholesale</td>
          <td>$1.00</td>
          <td>$1.25</td>
          <td>$1.20</td>
@@ -188,7 +338,7 @@
          <td>$1.00</td>
       </tr>
       <tr>
-         <th>Retail</th>
+         <td>Retail</td>
          <td>
      $2.00</td>
          <td>
@@ -199,11 +349,11 @@
          <td>
      $1.60</td></tr>
           <tr>
-         <th>Melbourne</th>
+         <td>Melbourne</td>
       </tr>
       <tr>
 
-         <th>Wholesale</th>
+         <td>Wholesale</td>
          <td>$1.00</td>
          <td>$1.25</td>
          <td>$1.20</td>
@@ -211,7 +361,7 @@
          <td>$1.00</td>
       </tr>
       <tr>
-         <th>Retail</th>
+         <td>Retail</td>
          <td>
      $2.00</td>
          <td>
@@ -222,7 +372,7 @@
          <td>
      $1.60</td></tr>
      </tbody>
-     </table></xmp></td>
+     </table> </xmp></td>
                 </tr> 
                 </tbody> </table>
     </div>
@@ -253,7 +403,9 @@
     <script>$.SyntaxHighlighter.init();
     $('.highlight').attr('max-height', '100px');
     </script>
-
+    <style type="text/css">
+      .linenums .atn{color: #666666 !important}
+    </style>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
   </body>
