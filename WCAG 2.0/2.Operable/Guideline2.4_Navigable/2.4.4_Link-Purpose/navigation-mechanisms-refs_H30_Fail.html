@@ -60,79 +60,65 @@
     <div class="row">
     <div class="col-md-12">
 
-    <div class="bs-callout bs-callout-info" id="callout-type-dl-truncate"> <h1>H30: Providing link text that describes the purpose of a link for anchor elements</h1> </div>
+    <div class="bs-callout bs-callout-info" id="callout-type-dl-truncate"> <h1>H30 (Fail): Providing link text that describes the purpose of a link for anchor elements</h1> </div>
 
   
      <table class="table table-bordered" id="test">
              <thead>
               <tr>
               
-              <th scope="50%" scope="col">HTML Snippet</th>
+              <th width="50%" scope="col">HTML Snippet</th>
               <th width="50%" scope="col">Code</th>
               </tr>
               </thead>
               <tbody>
-              <tr><td colspan="2"><div><strong>Scenario 1:</strong> Describing the purpose of the link using link text</div></td></tr>
+              <tr><td colspan="2"><div><strong>Scenario 1:</strong> Purpose of the link is not clear form link text</div></td></tr>
                 <tr class="Examplerow">
-                <td class="htmlSnippet wcag-pass">                       
-                 <a href="http://www.deque.com">Learn more about deque</a>      
+                <td class="htmlSnippet wcag-fail">                       
+                  <a href="http://www.deque.com">deque</a>     
                      </td>
                      <td class="code"> 
-                     <xmp class="highlight"><a href="http://www.deque.com">Learn more about deque</a> </xmp></td>
-                </tr> 
-
-                <tr><td colspan="2"><div><strong>Scenario 2:</strong> Describing the purpose of the link using image alternative text</div></td></tr>
-                <tr class="Examplerow">
-                <td class="htmlSnippet wcag-pass">                       
-                  <a href="http://www.deque.com"> <img src="../../../Resources/Images/logo.jpg" height="30" width="70" alt="Learn more about Deque"/></a>     
-                     </td>
-                     <td class="code"> 
-                     <xmp class="highlight"> <a href="http://www.deque.com"> <img src="../../../Resources/Images/logo.jpg" height="30" width="70" alt="Learn more about Deque"/></a> </xmp></td>
+                     <xmp class="highlight"><a href="http://www.deque.com">deque</a>  </xmp></td>
                 </tr>
 
-                <tr><td colspan="2"><div><strong>Scenario 3:</strong> Describing the purpose of the link using link text along with image</div></td></tr>
+                <tr><td colspan="2"><div><strong>Scenario 2:</strong> Image without alternate text inside an anchor tag</div></td></tr>
                 <tr class="Examplerow">
-                <td class="htmlSnippet wcag-pass">                       
-                   <a href="http://www.deque.com"> <img src="../../../Resources/Images/logo.jpg" height="30" width="70" alt=""/>Learn more about Deque</a>     
+                <td class="htmlSnippet wcag-fail">                       
+                  <a href="http://www.deque.com"> <img src="../../../Resources/Images/logo.jpg" height="30" width="70" alt=""/></a>     
                      </td>
                      <td class="code"> 
-                     <xmp class="highlight"><a href="http://www.deque.com"> <img src="../../../Resources/Images/logo.jpg" height="30" width="70" alt=""/>Learn more about Deque</a></xmp></td>
+                     <xmp class="highlight"><a href="http://www.deque.com"> <img src="../../../Resources/Images/logo.jpg" height="30" width="70" alt=""/></a> </xmp></td>
                 </tr>
 
-                <tr><td colspan="2"><div><strong>Scenario 4:</strong> Describing the purpose of the link using both link text and image alternative text</div></td></tr>
+                <tr><td colspan="2"><div><strong>Scenario 3:</strong> Link text is not clear</div></td></tr>
                 <tr class="Examplerow">
-                <td class="htmlSnippet wcag-pass">                       
-                  <a href="http://www.deque.com">Learn more about <img src="../../../Resources/Images/logo.jpg" height="30" width="70" alt="Deque"/></a>     
+                <td class="htmlSnippet wcag-fail">                       
+                   <a href="https://www.deque.com/products/amaze/">Learn more</a><br/>
+                  <a href="https://www.deque.com/products/axe/">Learn more</a>    
                      </td>
                      <td class="code"> 
-                     <xmp class="highlight"> <a href="http://www.deque.com">Learn more about <img src="../../../Resources/Images/logo.jpg" height="30" width="70" alt="Deque"/></a></xmp></td>
+                     <xmp class="highlight"><a href="https://www.deque.com/products/amaze/">Learn more</a><br/>
+                  <a href="https://www.deque.com/products/axe/">Learn more</a></xmp></td>
                 </tr>
 
-                <tr><td colspan="2"><div><strong>Scenario 5:</strong> Describing the purpose of each link using link text</div></td></tr>
+                <tr><td colspan="2"><div><strong>Scenario 4:</strong> No Visible link text</div></td></tr>
                 <tr class="Examplerow">
-                <td class="htmlSnippet wcag-pass">                       
-                  <a href="https://www.deque.com/products/amaze/">Learn more about Amaze</a>   <br/>
-                  <a href="https://www.deque.com/products/axe/">Learn more about aXe</a>    
+                <td class="htmlSnippet wcag-fail">                       
+                   <a href="https://www.deque.com/products/amaze/"></a>    
                      </td>
                      <td class="code"> 
-                     <xmp class="highlight">
-                       <a href="https://www.deque.com/products/amaze/">Learn more about Amaze</a><br/>   
-                  <a href="https://www.deque.com/products/axe/">Learn more about aXe</a>  
-                     </xmp></td>
+                     <xmp class="highlight"><a href="https://www.deque.com/products/amaze/"></a></xmp></td>
                 </tr>
 
-                <tr><td colspan="2"><div><strong>Scenario 6:</strong> Using a link to wrap block level elements</div></td></tr>
+                <tr><td colspan="2"><div><strong>Scenario 5:</strong> Two different links (with different targets) have same identifying text</div></td></tr>
                 <tr class="Examplerow">
-                <td class="htmlSnippet wcag-pass">                       
-                  <a href="https://www.deque.com/products/axe">
-                  <p>aXe is our free accessibility testing tool that runs right in your web browser.  It's fast and easy to use. Checkout the aXe-core API for more advanced testing options.</p>
-                  <p><strong>Learn more</strong></p>
-                  </a>   
+                <td class="htmlSnippet wcag-fail">                       
+                   <p>Deque has number of a11y products and to know more about deque, do visit <a href="http://www.deque.com">deque</a></p>
+<p>Deque has number of a11y services to offer and to know more about deque, do visit <a href="http://www.google.com">deque</a></p>    
                      </td>
                      <td class="code"> 
-                     <xmp class="highlight"><p>aXe is our free accessibility testing tool that runs right in your web browser.  It's fast and easy to use. Checkout the aXe-core API for more advanced testing options.</p>
-                  <p><strong>Learn more</strong></p>
-                  </a>   </xmp></td>
+                     <xmp class="highlight"><p>Deque has number of a11y products and to know more about deque, do visit <a href="http://www.deque.com">deque</a></p>
+<p>Deque has number of a11y services to offer and to know more about deque, do visit <a href="http://www.google.com">deque</a></p></xmp></td>
                 </tr>
                 </tbody> </table>
     </div>
@@ -163,7 +149,9 @@
     <script>$.SyntaxHighlighter.init();
     $('.highlight').attr('max-height', '100px');
     </script>
-
+<style type="text/css">
+      .linenums .atn{color: #666666 !important}
+    </style>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
   </body>
