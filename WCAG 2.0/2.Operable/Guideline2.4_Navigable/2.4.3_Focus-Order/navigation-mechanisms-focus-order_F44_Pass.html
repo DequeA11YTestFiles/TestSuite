@@ -60,33 +60,33 @@
     <div class="row">
     <div class="col-md-12">
 
-    <div class="bs-callout bs-callout-info" id="callout-type-dl-truncate"> <h1>F44: Due to using tabindex to create a tab order that does not preserve meaning and operability</h1> </div>
+    <div class="bs-callout bs-callout-info" id="callout-type-dl-truncate"> <h1>F44 (Pass): Due to using tabindex to create a tab order that does not preserve meaning and operability</h1> </div>
 
   
      <table class="table table-bordered" id="test">
              <thead>
               <tr>
               
-              <th scope="50%" scope="col">HTML Snippet</th>
+              <th width="50%" scope="col">HTML Snippet</th>
               <th width="50%" scope="col">Code</th>
               </tr>
               </thead>
               <tbody>
-              <tr><td colspan="2"><div><strong>Scenario 1:</strong> Tabindex value is grater than 0</div></td></tr>
+              <tr><td colspan="2"><div><strong>Scenario 1:</strong> Tabindex is not used for the elements</div></td></tr>
                 <tr class="Examplerow">
-                <td class="htmlSnippet wcag-fail">                       
-                  <label for="uname">Firstname</label> <input id="uname" type="text" tabindex="3"></br>
-<label for="ln">Lastname</label> <input input id="ln" type="text" tabindex="4"></br>
-<label for="em">Email</label> <input input id="em" type="text" tabindex="1"></br>
-<label for="ps">password</label> <input input id="ps" type="text" tabindex="2"></br>
+                <td class="htmlSnippet wcag-pass">                       
+                  <label for="uname">Firstname</label> <input id="uname" type="text"></br>
+<label for="ln">Lastname</label> <input input id="ln" type="text"></br>
+<label for="em">Email</label> <input input id="em" type="text"></br>
+<label for="ps">password</label> <input input id="ps" type="text"></br>
 <button id="btnsubmit">submit</button>
 <button id="btncancel">Cancel</button>     
                      </td>
                      <td class="code"> 
-                     <xmp class="highlight"><label for="uname">Firstname</label> <input id="uname" type="text" tabindex="3"></br>
-<label for="ln">Lastname</label> <input input id="ln" type="text" tabindex="4"></br>
-<label for="em">Email</label> <input input id="em" type="text" tabindex="1"></br>
-<label for="ps">password</label> <input input id="ps" type="text" tabindex="2"></br>
+                     <xmp class="highlight"><label for="uname">Firstname</label> <input id="uname" type="text"></br>
+<label for="ln">Lastname</label> <input input id="ln" type="text"></br>
+<label for="em">Email</label> <input input id="em" type="text"></br>
+<label for="ps">password</label> <input input id="ps" type="text"></br>
 <button id="btnsubmit">submit</button>
 <button id="btncancel">Cancel</button></xmp></td>
                 </tr> 
@@ -119,7 +119,9 @@
     <script>$.SyntaxHighlighter.init();
     $('.highlight').attr('max-height', '100px');
     </script>
-
+<style type="text/css">
+      .linenums .atn{color: #666666 !important}
+    </style>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
   </body>
