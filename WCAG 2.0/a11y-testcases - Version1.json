@@ -315,13 +315,13 @@
       "technique": "F44-Fail"
      },
      {
-      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.4_Link-Purpose/navigation-mechanisms_H30_Pass.html",
-      "successCriteria": ["wcag20:navigation-mechanisms"],
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.4_Link-Purpose/navigation-mechanisms-refs_H30_Pass.html",
+      "successCriteria": ["wcag20:navigation-mechanisms-refs"],
       "technique": "H30-Pass"
     },
     {
-     "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.4_Link-Purpose/navigation-mechanisms_H30_Fail.html",
-      "successCriteria": ["wcag20:navigation-mechanisms"],
+     "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.4_Link-Purpose/navigation-mechanisms-refs_H30_Fail.html",
+      "successCriteria": ["wcag20:navigation-mechanisms-refs"],
       "technique": "H30-Fail"
      },
      {
