@@ -60,28 +60,26 @@
     <div class="row">
     <div class="col-md-12">
 
-    <div class="bs-callout bs-callout-info" id="callout-type-dl-truncate"> <h1>H78: Identifying the purpose of a link using link text combined with its enclosing paragraph</h1> </div>
+    <div class="bs-callout bs-callout-info" id="callout-type-dl-truncate"> <h1>H78 (Pass): Identifying the purpose of a link using link text combined with its enclosing paragraph</h1> </div>
 
   
      <table class="table table-bordered" id="test">
              <thead>
               <tr>
               
-              <th scope="50%" scope="col">HTML Snippet</th>
+              <th width="50%" scope="col">HTML Snippet</th>
               <th width="50%" scope="col">Code</th>
               </tr>
               </thead>
               <tbody>
-              <tr><td colspan="2"><div><strong>Scenario 1:</strong> Link is not part of the paragraph</div></td></tr>
+              <tr><td colspan="2"><div><strong>Scenario 1:</strong> Link is part of the paragraph</div></td></tr>
                 <tr class="Examplerow">
-                <td class="htmlSnippet wcag-fail">                       
-                 <p>Deque's web and mobile accessibility testing tools have been built around our philosophy of Shift Left Accessibility. Shift Left Accessibility (or Shift Left A11y) means introducing accessibility testing into earlier stages of your development process - in a diagram of your development process, this would mean moving the "accessibility testing" steps to the left in your visualization.</p>
-                 <a href="https://www.deque.com/products/"> Read more </a>
-
+                <td class="htmlSnippet wcag-pass">                       
+                 <p>Deque's web and mobile accessibility testing tools have been built around our philosophy of Shift Left Accessibility. Shift Left Accessibility (or Shift Left A11y) means introducing accessibility testing into earlier stages of your development process - in a diagram of your development process, this would mean moving the "accessibility testing" steps to the left in your visualization. <a href="https://www.deque.com/products/"> Read more </a> </p>
+                      
                      </td>
                      <td class="code"> 
-                     <xmp class="highlight"><p>Deque's web and mobile accessibility testing tools have been built around our philosophy of Shift Left Accessibility. Shift Left Accessibility (or Shift Left A11y) means introducing accessibility testing into earlier stages of your development process - in a diagram of your development process, this would mean moving the "accessibility testing" steps to the left in your visualization.</p>
-                 <a href="https://www.deque.com/products/"> Read more </a></xmp></td>
+                     <xmp class="highlight"><p>Deque's web and mobile accessibility testing tools have been built around our philosophy of Shift Left Accessibility. Shift Left Accessibility (or Shift Left A11y) means introducing accessibility testing into earlier stages of your development process - in a diagram of your development process, this would mean moving the "accessibility testing" steps to the left in your visualization. <a href="https://www.deque.com/products/"> Read more </a> </p></xmp></td>
                 </tr> 
                 </tbody> </table>
     </div>
@@ -112,7 +110,9 @@
     <script>$.SyntaxHighlighter.init();
     $('.highlight').attr('max-height', '100px');
     </script>
-
+<style type="text/css">
+      .linenums .atn{color: #666666 !important}
+    </style>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
   </body>
