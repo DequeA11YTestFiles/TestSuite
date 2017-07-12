@@ -67,7 +67,7 @@
              <thead>
               <tr>
               
-              <th scope="50%" scope="col">HTML Snippet</th>
+              <th width="50%" scope="col">HTML Snippet</th>
               <th width="50%" scope="col">Code</th>
               </tr>
               </thead>
@@ -76,7 +76,7 @@
                 <tr class="Examplerow">
                 <td class="htmlSnippet wcag-fail">                       
                   <table cellspacing="0" border="1" width="200px">
-<caption>Sales for current year</caption>
+<caption style="color: #000000">Sales for current year</caption>
      <tbody><tr>
       <td  scope="col">Product</td>
       <td  scope="col">Price</td>
@@ -93,7 +93,7 @@
                      </td>
                      <td class="code"> 
                      <xmp class="highlight"><table cellspacing="0" border="1" width="200px">
-<caption>Sales for current year</caption>
+<caption style="color: #000000">Sales for current year</caption>
      <tbody><tr>
       <td  scope="col">Product</td>
       <td  scope="col">Price</td>
@@ -107,6 +107,117 @@
       <td>$300.75</td>      
     </tr>
   </tbody></table></xmp></td>
+                </tr> 
+
+<tr><td colspan="2"><div><strong>Scenario 2:</strong> Scope attribute is not provided</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet wcag-fail">                       
+                  <table cellspacing="0" border="1" width="200px">
+<caption style="color: #000000">Sales for current year</caption>
+     <tbody><tr>
+      <td>Product</td>
+      <td>Price</td>
+    </tr>
+    <tr>
+    <td>WorldSpace</td>
+    <td>$126.99</td>
+    </tr><tr>
+       <td>Amaze</td>
+            
+      <td>$300.75</td>      
+    </tr>
+  </tbody></table>     
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><table cellspacing="0" border="1" width="200px">
+<caption style="color: #000000">Sales for current year</caption>
+     <tbody><tr>
+      <td>Product</td>
+      <td>Price</td>
+    </tr>
+    <tr>
+    <td>WorldSpace</td>
+    <td>$126.99</td>
+    </tr><tr>
+       <td>Amaze</td>
+            
+      <td>$300.75</td>      
+    </tr>
+</tbody></table></xmp>
+    <tr><td colspan="2"><div><strong>Scenario 3:</strong> Scope column (col) attribute is not provided for table head (th)</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet wcag-fail">                       
+                  <table cellspacing="0" border="1" width="200px">
+<caption style="color: #000000">Sales for current year</caption>
+     <tbody><tr>
+      <th>Product</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+    <td>WorldSpace</td>
+    <td>$126.99</td>
+    </tr><tr>
+       <td>Amaze</td>
+            
+      <td>$300.75</td>      
+    </tr>
+  </tbody></table> 
+
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><table cellspacing="0" border="1" width="200px">
+<caption style="color: #000000">Sales for current year</caption>
+     <tbody><tr>
+      <th>Product</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+    <td>WorldSpace</td>
+    <td>$126.99</td>
+    </tr><tr>
+       <td>Amaze</td>
+            
+      <td>$300.75</td>      
+    </tr>
+</tbody></table></xmp>
+</td>
+</tr>
+
+<tr><td colspan="2"><div><strong>Scenario 4:</strong> Scope row attribute is not provided for table head (th)</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet wcag-pass">                       
+                <table cellspacing="0" border="1" width="200px">
+<caption style="color: #000000">Sales for current year</caption>
+     <tbody><tr>
+      <th>Product</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+    <th>WorldSpace</th>
+    <td>$126.99</td>
+    </tr><tr>
+       <th>Amaze</th>
+            
+      <td>$300.75</td>      
+    </tr>
+  </tbody></table>       
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><table cellspacing="0" border="1" width="200px">
+<caption style="color: #000000">Sales for current year</caption>
+     <tbody><tr>
+      <th>Product</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+    <th>WorldSpace</th>
+    <td>$126.99</td>
+    </tr><tr>
+       <th>Amaze</th>
+            
+      <td>$300.75</td>      
+    </tr>
+  </tbody></table> </xmp></td>
                 </tr> 
                 </tbody> </table>
     </div>
@@ -137,7 +248,9 @@
     <script>$.SyntaxHighlighter.init();
     $('.highlight').attr('max-height', '100px');
     </script>
-
+    <style type="text/css">
+      .linenums .atn{color: #666666 !important}
+    </style>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
   </body>
