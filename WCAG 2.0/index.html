@@ -1,0 +1,474 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../favicon.ico">
+
+    <title>WCAG Techniques</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="Resources/Styles/bootstrap.css" rel="stylesheet">
+    <link href="Resources/Styles/hilighter.css" rel="stylesheet">
+    <!-- Custom scripts for this template -->
+       <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+   <script>
+  $(document).ready(function() {
+    function function1() {
+    // add a click handler to all links
+    // that point to same-page targets (href="#...")
+  $("a[href^='#']").click(function() {
+      // get the href attribute of the internal link
+      // then strip the first character off it (#)
+      // leaving the corresponding id attribute
+      $("#"+$(this).attr("href").slice(1)+"")
+        // give that id focus (for browsers that didn't already do so)
+        .focus()
+        // add a highlight effect to that id (comment out if not using)
+        .effect("highlight", {}, 3000);
+
+    });
+    }
+
+  });
+</script>
+
+
+  </head>
+
+  <body>
+
+        <!-- Begin page content -->
+<div class="container" id="content">
+<div class="row">
+<div class="bs-callout bs-callout-info" id="callout-type-dl-truncate"> <h1 class="pull-left">WCAG Techniques</h1> 
+<span class="pull-right" style="margin-top: 5px"><strong><a href="https://cdn.rawgit.com/DequeA11YTestFiles/TestSuite/3b4bbfae/WCAG%202.0/a11y-testcases.json" target="_blank">JSON</a></strong></span>
+<span class="clearfix"></span>
+</div>
+<div id="myTab" class="container">
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="tab active">
+      <a id="Perceivable" href="#Perceivable" role="tab" aria-controls="Perceivable" aria-selected="true" data-toggle="tab" tabindex="0">Perceivable</a>
+    </li>
+    <li class="tab">
+      <a id="Operable" href="#Operable" role="tab" aria-controls="Operable" aria-selected="false" data-toggle="tab" tabindex="-1">Operable</a>
+    </li>
+    <li class="tab">
+      <a id="Understandable" href="#Understandable" role="tab" aria-controls="Understandable" aria-selected="false" data-toggle="tab" tabindex="-1">Understandable</a>
+    </li>
+    <li class="tab">
+      <a id="Robust" href="#Robust" role="tab" aria-controls="Robust" aria-selected="false" data-toggle="tab" tabindex="-1">Robust</a>
+    </li>
+  </ul>
+
+  <div id="myTabContent" class="tab-content" aria-live="polite">
+    <div class="tab-pane fade in active" id="Perceivable" role="tabpanel" aria-labelledby="Perceivable" aria-hidden="false" tabindex="0">
+      
+     <table class="table table-condenced table-striped table-responsive">
+     <caption><h2 style="font-size: 20px">Guideline 1.1 Text-Alternatives</h2></caption>
+             <thead>
+              <tr>        
+              <th width="20%" scope="col">Success Criteria</th>      
+              <th width="75%" scope="col">Technique</th>
+              <th width="5%" scope="col">Examples</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+              <td>1.1.1 Non Text content</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/G73.html">G73: Providing a long description in another location with a link to it that is immediately adjacent to the non-text content</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.1_Text-Alternatives/1.1.1_Nontext-Content/text-equiv-all_G73_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.1_Text-Alternatives/1.1.1_Nontext-Content/text-equiv-all_G73_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <tr>
+              <td>1.1.1 Non Text content</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/H24.html">H24: Providing text alternatives for the area elements of image maps</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.1_Text-Alternatives/1.1.1_Nontext-Content/text-equiv-all_H24_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.1_Text-Alternatives/1.1.1_Nontext-Content/text-equiv-all_H24_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <tr>
+              <td>1.1.1 Non Text content</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/H36.html">H36: Using alt attributes on images used as submit buttons</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.1_Text-Alternatives/1.1.1_Nontext-Content/text-equiv-all_H36_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.1_Text-Alternatives/1.1.1_Nontext-Content/text-equiv-all_H36_Fail.html" target="_blank">Fail</a></td>
+              </tr>  
+
+              <tr>
+              <td>1.1.1 Non Text content</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/G37.html">H37: Using alt attributes on img elements</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.1_Text-Alternatives/1.1.1_Nontext-Content/text-equiv-all_H37_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.1_Text-Alternatives/1.1.1_Nontext-Content/text-equiv-all_H37_Fail.html" target="_blank">Fail</a></td>
+              </tr> 
+
+              <tr>
+              <td>1.1.1 Non Text content</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/G67.html">H67: Using null alt text and no title attribute on img elements for images that AT should ignore</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.1_Text-Alternatives/1.1.1_Nontext-Content/text-equiv-all_H67_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.1_Text-Alternatives/1.1.1_Nontext-Content/text-equiv-all_H67_Fail.html" target="_blank">Fail</a></td>
+              </tr> 
+
+              <tr>
+              <td>1.1.1 Non Text content</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/G86.html">H86: Providing text alternatives for ASCII art, emoticons, and leetspeak</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.1_Text-Alternatives/1.1.1_Nontext-Content/text-equiv-all_H86_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.1_Text-Alternatives/1.1.1_Nontext-Content/text-equiv-all_H86_Fail.html" target="_blank">Fail</a></td>
+              </tr> 
+</tbody>
+</table>
+
+<table class="table table-condenced table-striped table-responsive">
+<caption><h2 style="font-size: 20px">Guideline 1.3 Adaptable</h2></caption>
+             <thead>
+              <tr>        
+              <th width="20%" scope="col">Success Criteria</th>      
+              <th width="75%" scope="col">Technique</th>
+              <th width="5%" scope="col">Examples</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+              <td>1.3.1 Info and Relationship</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/G130.html">G130: Providing descriptive headings</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_G130_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_G130_Fail.html" target="_blank">Fail</a></td>
+              </tr> 
+
+              <tr>
+              <td>1.3.1 Info and Relationship</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/G141.html">G141: Organizing a page using headings</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_G141_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_G141_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <tr>
+              <td>1.3.1 Info and Relationship</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/H39.html">H39: Using caption elements to associate data table captions with data tables</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_H39_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_H39_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <tr>
+              <td>1.3.1 Info and Relationship</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/H42.html">H42: Using h1-h6 to identify headings</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_H42_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_H42_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <tr>
+              <td>1.3.1 Info and Relationship</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/H43.html">H43: Using id and headers attributes to associate data cells with header cells in data tables</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_H43_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_H43_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <tr>
+              <td>1.3.1 Info and Relationship</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/H44.html">H44: Using label elements to associate text labels with form controls</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_H44_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_H44_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <tr>
+              <td>1.3.1 Info and Relationship</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/H48.html">H48: Using ol, ul and dl for lists or groups of links</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_H48_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_H48_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <tr>
+              <td>1.3.1 Info and Relationship</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/H49.html">H49: Using semantic markup to mark emphasized or special text</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_H49_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_H49_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <tr>
+              <td>1.3.1 Info and Relationship</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/H63.html">H63: Using the scope attribute to associate header cells and data cells in data tables</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_H63_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_H63_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <tr>
+              <td>1.3.1 Info and Relationship</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/H65.html">H65: Using the title attribute to identify form controls when the label element cannot be used</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_H65_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_H65_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <tr>
+              <td>1.3.1 Info and Relationship</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/H71.html">H71: Providing a description for groups of form controls using fieldset and legend elements</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_H71_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_H71_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <tr>
+              <td>1.3.1 Info and Relationship</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/F46.html">F46: Due to using th elements, caption elements, or non-empty summary attributes in layout tables</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_F46_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.1_Info-and-Relationship/content-structure-separation-programmatic_F46_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <tr>
+              <td>1.3.2 Meaningful Sequence</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/C27.html">C27: Making the DOM order match the visual order</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.2_Meaningful-Sequence/content-structure-separation-sequence_C27_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.3_Adaptable/1.3.2_Meaningful-Sequence/content-structure-separation-sequence_C27_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+                </tbody> </table>
+ 
+<table class="table table-condenced table-striped table-responsive">
+<caption><h2 style="font-size: 20px">Guideline 1.4 Distinguishable</h2></caption>
+             <thead>
+              <tr>        
+              <th width="20%" scope="col">Success Criteria</th>      
+              <th width="75%" scope="col">Technique</th>
+              <th width="5%" scope="col">Examples</th>
+              </tr>
+              </thead>
+              <tbody>
+              
+              <tr>
+              <td>1.4.1 Use of Color</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/G183.html">G183: Using a contrast ratio of 3:1 with surrounding text and providing additional visual cues on focus for links or controls where color alone is used to identify them</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.4_Distinguishable/1.4.1_use-of-color/visual-audio-contrast_G183_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.4_Distinguishable/1.4.1_use-of-color/visual-audio-contrast_G183_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <tr>
+              <td>1.4.3 Contrast (Minimum)</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/G18.html">G18: Ensuring that a contrast ratio of at least 4.5:1 exists between text (and images of text) and background behind the text</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.4_Distinguishable/1.4.1_use-of-color/visual-audio-contrast_G18_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.4_Distinguishable/1.4.1_use-of-color/visual-audio-contrast_G18_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+</tbody>
+</table> 
+    </div>
+    <div class="tab-pane fade" id="Operable" role="tabpanel" aria-labelledby="Operable" aria-hidden="true" tabindex="0">
+      
+<table class="table table-condenced table-striped table-responsive">
+<caption><h2 style="font-size: 20px">Guideline 2.2 Enough Time</h2></caption>
+             <thead>
+              <tr>        
+              <th width="20%" scope="col">Success Criteria</th>      
+              <th width="75%" scope="col">Technique</th>
+              <th width="5%" scope="col">Examples</th>
+              </tr>
+              </thead>
+              <tbody>
+
+              <tr>
+              <td>2.2.1 Timing Adjustable</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/F41.html">F41: Due to using meta refresh to reload the page</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.2_Enough-Time/2.2.1_Timing-Adjustable/time-limits-required-behaviors_F41_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.2_Enough-Time/2.2.1_Timing-Adjustable/time-limits-required-behaviors_F41_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <td>2.2.2 Pause, stop, hide</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/F16.html">F16: Due to including scrolling content where movement is not essential to the activity without also including a mechanism to pause and restart the content</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.2_Enough-Time/2.2.2_Pause-Stop-Hide/time-limits-pause_F16_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.2_Enough-Time/2.2.2_Pause-Stop-Hide/time-limits-pause_F16_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+              <td>2.2.2 Pause, stop, hide</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/F47.html">F47: Due to using the blink element</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.2_Enough-Time/2.2.2_Pause-Stop-Hide/time-limits-pause_F47_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.2_Enough-Time/2.2.2_Pause-Stop-Hide/time-limits-pause_F47_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+</table>
+
+
+<table class="table table-condenced table-striped table-responsive">
+<caption><h2 style="font-size: 20px">Guideline 2.3 Seizures</h2></caption>
+             <thead>
+              <tr>        
+              <th width="20%" scope="col">Success Criteria</th>      
+              <th width="75%" scope="col">Technique</th>
+              <th width="5%" scope="col">Examples</th>
+              </tr>
+              </thead>
+              <tbody>
+
+     <tr>
+              <td>2.3.1 Three Flash</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/G19.html">G19: Ensuring that no component of the content flashes more than three times in any 1-second period</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.3_Seizures/2.3.1_Three-Flashes-or-Below-Threshold/seizure-does-not-violate_G19_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.3_Seizures/2.3.1_Three-Flashes-or-Below-Threshold/seizure-does-not-violate_G19_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+</table>
+
+
+<table class="table table-condenced table-striped table-responsive">
+<caption><h2 style="font-size: 20px">Guideline 2.4 Navigable</h2></caption>
+             <thead>
+              <tr>        
+              <th width="20%" scope="col">Success Criteria</th>      
+              <th width="75%" scope="col">Technique</th>
+              <th width="5%" scope="col">Examples</th>
+              </tr>
+              </thead>
+              <tbody>
+
+              <tr>
+              <td>2.4.1 Bypass Blocks</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/G1.html">G1: Adding a link at the top of each page that goes directly to the main content area</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.1_Bypass-Blocks/navigation-mechanisms-skip_G1_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.1_Bypass-Blocks/navigation-mechanisms-skip_G1_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+               <tr>
+              <td>2.4.1 Bypass Blocks</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/G123.html">G123: Adding a link at the beginning of a block of repeated content to go to the end of the block</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.1_Bypass-Blocks/navigation-mechanisms-skip_G123_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.1_Bypass-Blocks/navigation-mechanisms-skip_G123_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <tr>
+              <td>2.4.1 Bypass Blocks</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/H64.html">H64: Using the title attribute of the frame and iframe elements</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.1_Bypass-Blocks/navigation-mechanisms-skip_H64_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.1_Bypass-Blocks/navigation-mechanisms-skip_H64_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <tr>
+              <td>2.4.2 Page Titled</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/F25.html">F25: Due to the title of a Web page not identifying the contents</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.2_Page-Titled/navigation-mechanisms-title_F25_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.2_Page-Titled/navigation-mechanisms-title_F25_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <tr>
+              <td>2.4.2 Page Titled</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/G88.html">G88: Providing descriptive titles for Web pages</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.2_Page-Titled/navigation-mechanisms-title_G88_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.2_Page-Titled/navigation-mechanisms-title_G88_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <tr>
+              <td>2.4.3 Focus Order</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/F44.html">F44: Due to using tabindex to create a tab order that does not preserve meaning and operability</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.3_Focus-Order/navigation-mechanisms-focus-order_F44_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.3_Focus-Order/navigation-mechanisms-focus-order_F44_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <tr>
+              <td>2.4.4 Link Purpose</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/H30.html">H30: Providing link text that describes the purpose of a link for anchor elements</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.4_Link-Purpose/navigation-mechanisms-refs_H30_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.4_Link-Purpose/navigation-mechanisms-refs_H30_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <tr>
+              <td>2.4.4 Link Purpose</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/H77.html">H77: Identifying the purpose of a link using link text combined with its enclosing list item</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.4_Link-Purpose/navigation-mechanisms-refs_H77_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.4_Link-Purpose/navigation-mechanisms-refs_H77_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <tr>
+              <td>2.4.4 Link Purpose</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/H78.html">H78: Identifying the purpose of a link using link text combined with its enclosing paragraph</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.4_Link-Purpose/navigation-mechanisms-refs_H78_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.4_Link-Purpose/navigation-mechanisms-refs_H78_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+</tbody>
+</table>
+
+
+    </div>
+    <div class="tab-pane fade" id="Understandable" role="tabpanel" aria-labelledby="Understandable" aria-hidden="true" tabindex="0">
+      
+<table class="table table-condenced table-striped table-responsive">
+<caption><h2 style="font-size: 20px">Guideline 3.1 Readable</h2></caption>
+             <thead>
+              <tr>        
+              <th width="20%" scope="col">Success Criteria</th>      
+              <th width="75%" scope="col">Technique</th>
+              <th width="5%" scope="col">Examples</th>
+              </tr>
+              </thead>
+              <tbody>
+
+              <tr>
+              <td>3.1.1 Language of Page</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/H57.html">H57: Using language attributes on the html element</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.1_Readable/3.1.1_Language-of-Page/meaning_H57_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.1_Readable/3.1.1_Language-of-Page/meaning_H57_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <tr>
+              <td>3.1.2 Language of Part</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/H58.html">H58: Using language attributes to identify changes in the human language</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.1_Readable/3.1.2_Language-of-Part/meaning-other-lang-id_H58_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.1_Readable/3.1.2_Language-of-Part/meaning-other-lang-id_H58_Pass.html" target="_blank">Fail</a></td>
+              </tr>
+</tbody>
+</table>
+
+
+<table class="table table-condenced table-striped table-responsive">
+<caption><h2 style="font-size: 20px">Guideline 3.2 Predictable</h2></caption>
+             <thead>
+              <tr>        
+              <th width="20%" scope="col">Success Criteria</th>      
+              <th width="75%" scope="col">Technique</th>
+              <th width="5%" scope="col">Examples</th>
+              </tr>
+              </thead>
+              <tbody>
+
+              <tr>
+              <td>3.2.1 On Focus</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/F52.html">F52: Due to opening a new window as soon as a new page is loaded</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.2_Predictable/3.2.1_On-Focus/consistent-behavior-receive-focus_F52_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.2_Predictable/3.2.1_On-Focus/consistent-behavior-receive-focus_F52_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <tr>
+              <td>3.2.1 On Focus</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/F55.html">F55: Due to using script to remove focus when focus is received</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.2_Predictable/3.2.1_On-Focus/consistent-behavior-receive-focus_F55_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.2_Predictable/3.2.1_On-Focus/consistent-behavior-receive-focus_F55_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+</tbody>
+</table>
+    </div>
+    <div class="tab-pane fade" id="Robust" role="tabpanel" aria-labelledby="Robust" aria-hidden="true" tabindex="0">
+      
+<table class="table table-condenced table-striped table-responsive">
+<caption><h2 style="font-size: 20px">Guideline 4.1 Compatable</h2></caption>
+             <thead>
+              <tr>        
+              <th width="20%" scope="col">Success Criteria</th>      
+              <th width="75%" scope="col">Technique</th>
+              <th width="5%" scope="col">Examples</th>
+              </tr>
+              </thead>
+              <tbody>
+
+              <tr>
+              <td>4.1.1 Parsing</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/H74.html">H74: Ensuring that opening and closing tags are used according to specification</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/4.Robust/Guideline4.1_Compatable/4.1.1_Parsing/ensure-compat-parses_H74_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/4.Robust/Guideline4.1_Compatable/4.1.1_Parsing/ensure-compat-parses_H74_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+
+              <tr>
+              <td>4.1.1 Parsing</td>
+              <td><a href="https://www.w3.org/TR/WCAG20-TECHS/H93.html">H93: Ensuring that id attributes are unique on a Web page</a></td>
+              <td><a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/4.Robust/Guideline4.1_Compatable/4.1.1_Parsing/ensure-compat-parses_H93_Pass.html" target="_blank">Pass</a> | <a href="https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/4.Robust/Guideline4.1_Compatable/4.1.1_Parsing/ensure-compat-parses_H93_Fail.html" target="_blank">Fail</a></td>
+              </tr>
+</tbody>
+</table>
+    </div>
+  </div>
+</div>    
+      </div><!-- /tabbable -->
+      </div>
+      <div class="clearfix"></div>
+      </div>
+    <!-- <div class="page-header"></div> -->
+
+      <!-- Content Ends here -->
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p class="text-muted" style="text-align: center;">Deque Systems, Inc.</p>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="Resources/Scripts/custom.js"></script>
+    <script src="Resources/Scripts/bootstrap.js"></script>
+    <script src="Resources/Scripts/hilighter.js"></script>
+    <script>$.SyntaxHighlighter.init();
+    $('.highlight').attr('max-height', '100px');
+    </script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+  </body>
+</html>
