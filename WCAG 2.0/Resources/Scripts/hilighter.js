@@ -15,7 +15,7 @@
     a.fn.findAndSelf = a.fn.findAndSelf || function (b) { return a(this).find(b).andSelf().filter(b) }; Number.prototype.replace = Number.prototype.replace || function () { return ("" + this).replace.apply(this, arguments) }; a.SyntaxHighlighter ? window.console.warn("SyntaxHighlighter has already been defined...") : a.SyntaxHighlighter = {
         config: {
             load: true, highlight: true, debug: false, wrapLines: true, lineNumbers: true, stripEmptyStartFinishLines: true, stripInitialWhitespace: true, alternateLines: false, defaultClassname: "highlight",
-            theme: "balupton", themes: ["balupton"], addSparkleExtension: true, prettifyBaseUrl: "http://balupton.github.com/jquery-syntaxhighlighter/prettify", baseUrl: "http://balupton.github.com/jquery-syntaxhighlighter"
+            theme: "balupton", themes: ["balupton"], addSparkleExtension: true, prettifyBaseUrl: "https://balupton.github.com/jquery-syntaxhighlighter/prettify", baseUrl: "https://balupton.github.com/jquery-syntaxhighlighter"
         }, init: function (b) {
             var c = this.config, d = c.baseUrl; if (d[d.length - 1] === "/") c.baseUrl = d.substr(0, d.length - 2); delete d; a.extend(true, this.config, b || {}); a.Sparkle && a.Sparkle.addExtension("syntaxhighlighter", function () { a(this).syntaxHighlight() }); a.fn.syntaxHighlight = a.fn.SyntaxHighlight = this.fn; c.load && this.load();
             c.highlight && this.highlight(); return this
