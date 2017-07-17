@@ -72,44 +72,7 @@
               </tr>
               </thead>
               <tbody>
-              <tr><td colspan="2"><div><strong>Scenario 1:</strong> Scope attribute is not provided properly</div></td></tr>
-                <tr class="Examplerow">
-                <td class="htmlSnippet wcag-fail">                       
-                  <table cellspacing="0" border="1" width="200px">
-<caption style="color: #000000">Sales for current year</caption>
-     <tbody><tr>
-      <td  scope="col">Product</td>
-      <td  scope="col">Price</td>
-    </tr>
-    <tr>
-    <td>WorldSpace</td>
-    <td>$126.99</td>
-    </tr><tr>
-       <td>Amaze</td>
-            
-      <td>$300.75</td>      
-    </tr>
-  </tbody></table>     
-                     </td>
-                     <td class="code"> 
-                     <xmp class="highlight"><table cellspacing="0" border="1" width="200px">
-<caption style="color: #000000">Sales for current year</caption>
-     <tbody><tr>
-      <td  scope="col">Product</td>
-      <td  scope="col">Price</td>
-    </tr>
-    <tr>
-    <td>WorldSpace</td>
-    <td>$126.99</td>
-    </tr><tr>
-       <td>Amaze</td>
-            
-      <td>$300.75</td>      
-    </tr>
-  </tbody></table></xmp></td>
-                </tr> 
-
-<tr><td colspan="2"><div><strong>Scenario 2:</strong> Scope attribute is not provided</div></td></tr>
+<tr><td colspan="2"><div><strong>Scenario 1:</strong> Scope attribute is not provided</div></td></tr>
                 <tr class="Examplerow">
                 <td class="htmlSnippet wcag-fail">                       
                   <table cellspacing="0" border="1" width="200px">
@@ -119,10 +82,10 @@
       <td>Price</td>
     </tr>
     <tr>
-    <td>WorldSpace</td>
+    <td>Product 1</td>
     <td>$126.99</td>
     </tr><tr>
-       <td>Amaze</td>
+       <td>Product 2</td>
             
       <td>$300.75</td>      
     </tr>
@@ -136,15 +99,15 @@
       <td>Price</td>
     </tr>
     <tr>
-    <td>WorldSpace</td>
+    <td>Product 1</td>
     <td>$126.99</td>
     </tr><tr>
-       <td>Amaze</td>
+       <td>Product 2</td>
             
       <td>$300.75</td>      
     </tr>
 </tbody></table></xmp>
-    <tr><td colspan="2"><div><strong>Scenario 3:</strong> Scope column (col) attribute is not provided for table head (th)</div></td></tr>
+    <tr><td colspan="2"><div><strong>Scenario 2:</strong> Scope column (col) attribute is not provided for table head (th)</div></td></tr>
                 <tr class="Examplerow">
                 <td class="htmlSnippet wcag-fail">                       
                   <table cellspacing="0" border="1" width="200px">
@@ -154,10 +117,10 @@
       <th>Price</th>
     </tr>
     <tr>
-    <td>WorldSpace</td>
+    <td>Product 1</td>
     <td>$126.99</td>
     </tr><tr>
-       <td>Amaze</td>
+       <td>Product 2</td>
             
       <td>$300.75</td>      
     </tr>
@@ -172,10 +135,10 @@
       <th>Price</th>
     </tr>
     <tr>
-    <td>WorldSpace</td>
+    <td>Product 1</td>
     <td>$126.99</td>
     </tr><tr>
-       <td>Amaze</td>
+       <td>Product 2</td>
             
       <td>$300.75</td>      
     </tr>
@@ -183,7 +146,7 @@
 </td>
 </tr>
 
-<tr><td colspan="2"><div><strong>Scenario 4:</strong> Scope row attribute is not provided for table head (th)</div></td></tr>
+<tr><td colspan="2"><div><strong>Scenario 3:</strong> Scope row attribute is not provided for table head (th)</div></td></tr>
                 <tr class="Examplerow">
                 <td class="htmlSnippet wcag-pass">                       
                 <table cellspacing="0" border="1" width="200px">
@@ -193,10 +156,10 @@
       <th>Price</th>
     </tr>
     <tr>
-    <th>WorldSpace</th>
+    <th>Product 1</th>
     <td>$126.99</td>
     </tr><tr>
-       <th>Amaze</th>
+       <th>Product 2</th>
             
       <td>$300.75</td>      
     </tr>
@@ -210,10 +173,10 @@
       <th>Price</th>
     </tr>
     <tr>
-    <th>WorldSpace</th>
+    <th>Product 1</th>
     <td>$126.99</td>
     </tr><tr>
-       <th>Amaze</th>
+       <th>Product 2</th>
             
       <td>$300.75</td>      
     </tr>
