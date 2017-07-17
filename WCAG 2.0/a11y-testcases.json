@@ -81,7 +81,7 @@
     },
     {
       "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/1.Perceivable/Guideline1.2_Time-based-Media/1.2.2_Captions_Pre-recorded/media-equiv-captions_G87_Fail.html",
-      "successCriteria": ["wcag20:media-equiv-captions "],
+      "successCriteria": ["wcag20:media-equiv-captions"],
       "technique": "H87-Fail"
     },
     {
