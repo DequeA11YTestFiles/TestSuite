@@ -360,6 +360,16 @@
       "technique": "H78-Fail"
      },
      {
+      "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.4_Link-Purpose/navigation-mechanisms-refs_C7_Pass.html",
+      "successCriteria": ["wcag20:navigation-mechanisms-refs"],
+      "technique": "C7-Pass"
+    },
+    {
+     "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/2.Operable/Guideline2.4_Navigable/2.4.4_Link-Purpose/navigation-mechanisms-refs_C7_Fail.html",
+      "successCriteria": ["wcag20:navigation-mechanisms-refs"],
+      "technique": "C7-Fail"
+     },
+     {
       "url": "https://rawgit.com/DequeA11YTestFiles/TestSuite/master/WCAG%202.0/3.Understandable/Guideline3.1_Readable/3.1.1_Language-of-Page/meaning_H57_Pass.html",
       "successCriteria": ["wcag20:meaning"],
       "technique": "H57-Pass"
