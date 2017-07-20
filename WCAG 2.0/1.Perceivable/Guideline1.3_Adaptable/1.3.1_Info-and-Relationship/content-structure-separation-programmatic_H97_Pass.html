@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../favicon.ico">
+
+    <title>H97: Grouping related links using the nav element</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../Resources/Styles/bootstrap.css" rel="stylesheet">
+    <link href="../../../Resources/Styles/hilighter.css" rel="stylesheet">
+    <!-- Custom scripts for this template -->
+       <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+   <script>
+  $(document).ready(function() {
+    function function1() {
+    // add a click handler to all links
+    // that point to same-page targets (href="#...")
+  $("a[href^='#']").click(function() {
+      // get the href attribute of the internal link
+      // then strip the first character off it (#)
+      // leaving the corresponding id attribute
+      $("#"+$(this).attr("href").slice(1)+"")
+        // give that id focus (for browsers that didn't already do so)
+        .focus()
+        // add a highlight effect to that id (comment out if not using)
+        .effect("highlight", {}, 3000);
+
+    });
+    }
+
+  });
+</script>
+
+<style type="text/css">
+  nav a{float: left;margin-right: 15px}
+</style>
+  </head>
+
+  <body>
+
+        <!-- Begin page content -->
+    <div class="container" id="content">
+     <!-- <div class="page-header"></div>
+       Content Starts here -->
+      <!-- Scenario Start -->
+    <div class="row">
+    <div class="col-md-12">
+
+    <div class="bs-callout bs-callout-info" id="callout-type-dl-truncate"> <h1>H97 (Pass): Grouping related links using the nav element</h1> </div>
+
+  
+     <table class="table table-bordered" id="test">
+             <thead>
+              <tr>
+              
+              <th width="50%" scope="col">HTML Snippet</th>
+              <th width="50%" scope="col">Code</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr><td colspan="2"><div><strong>Scenario 1:</strong> Group of links wrapped with nav tag</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet wcag-pass">                       
+                 <nav>
+                <a href="https://www.deque.com/"> Home </a>
+                <a href="https://www.deque.com/about-us/"> About </a>
+                <a href="https://www.deque.com/services/"> Services </a>
+                <a href="https://www.deque.com/products/"> Products </a>
+                <a href="http://accessibility.deque.com/contact-deque-today"> Contact </a>
+                </nav>      
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight"><nav>
+                <a href="https://www.deque.com/"> Home </a>
+                <a href="https://www.deque.com/about-us/"> About </a>
+                <a href="https://www.deque.com/services/"> Services </a>
+                <a href="https://www.deque.com/products/"> Products </a>
+                <a href="http://accessibility.deque.com/contact-deque-today"> Contact </a>
+                </nav> </xmp></td>
+                </tr> 
+
+
+                <tr><td colspan="2"><div><strong>Scenario 2:</strong> Able to differentiate when two navigation groups are provided with in same document</div></td></tr>
+                <tr class="Examplerow">
+                <td class="htmlSnippet wcag-pass">                       
+                 <a href="files/H97_Pass1.html"> View Example </a>      
+                     </td>
+                     <td class="code"> 
+                     <xmp class="highlight">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "http://www.w3.org/TR/html4/loose.dtd">
+ <html lang="en">
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+ <title>More than one Group of navigation links</title>
+ <style type="text/css">
+ #wrapper {
+    width:900px;
+    margin:0px auto;
+    border:1px solid #bbb;
+    padding:10px;
+  }
+  #header {
+    border:1px solid #bbb;
+    height:80px;
+    padding:10px;
+  }
+  #content {
+    margin-top:10px;
+    padding-bottom:10px;
+  }
+  /* applies to all divs within the content div */
+  #content div {
+    padding:10px;
+    border:1px solid #bbb;
+    float:left;
+  }
+  #content-left {
+    width:180px;
+    height:300px;
+  }
+  #content-main {
+    margin-left:10px;
+    width:666px;
+    height:150px;
+  }
+  #content-box1, #content-box2, #content-box3 {
+    padding:10px;
+    border:1px solid #bbb;
+    position:absolute;
+    margin-top:190px;
+    height:120px;
+  }
+  #content-box1 {
+    margin-left:212px;
+    width:200px;
+  }
+  #content-box2 {
+    margin-left:444px;
+    width:200px;
+  }
+  #content-box3 {
+    margin-left:676px;
+    width:202px;
+  }
+  #footer {
+    float:left;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:10px;
+    border:1px solid #bbb;
+    width:878px;
+  }
+  #bottom {
+    clear:both;
+    text-align:right;
+  }
+ul {
+    list-style-type: none;
+}
+  #header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#header ul li {
+    float: left;
+    margin-right: 15px;
+}
+
+a {
+  
+    width: 60px;
+   
+}
+#header nav a{float: left;margin-right: 15px}
+nav a{display: block;margin-right: 15px}
+ </style>
+
+ </head>
+ <body>
+<div id="wrapper">
+  <div id="header">
+  <nav aria-label="primary navigation">
+                <a href="https://www.deque.com/"> Home </a>
+                <a href="https://www.deque.com/about-us/"> About </a>
+                <a href="https://www.deque.com/services/"> Services </a>
+                <a href="https://www.deque.com/products/"> Products </a>
+                <a href="http://accessibility.deque.com/contact-deque-today"> Contact </a>
+                </nav>
+  </div>
+
+  <div id="content-box1"><p>Box 1</p></div>
+  <div id="content-box2"><p>Box 2</p></div>
+  <div id="content-box3"><p>Box 3</p></div>
+
+  <div id="content">
+    <div id="content-left">
+      
+      <nav aria-label="Quick links">
+                <a href="https://www.deque.com/"> Home </a>
+                <a href="https://www.deque.com/about-us/"> About </a>
+                <a href="https://www.deque.com/services/"> Services </a>
+                <a href="https://www.deque.com/products/"> Products </a>
+                <a href="http://accessibility.deque.com/contact-deque-today"> Contact </a>
+                </nav>
+    </div>
+    <div id="content-main">
+      <p>Main home page content or image goes here...</p>
+      <a href="deque.com">more info</a>
+    </div>
+  </div>
+
+  <div id="footer">Footer text and links can go all the way along here... text text text text text text...</div>
+  <div id="bottom"></div>
+
+</div>
+ </body>
+ </html>
+ </xmp></td>
+                </tr>
+
+
+                </tbody> </table>
+    </div>
+
+      </div><!-- /tabbable -->
+      </div>
+      <div class="clearfix"></div>
+      </div>
+    <!-- <div class="page-header"></div> -->
+
+      <!-- Content Ends here -->
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p class="text-muted" style="text-align: center;">Deque Systems, Inc.</p>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="../../../Resources/Scripts/custom.js"></script>
+    <script src="../../../Resources/Scripts/bootstrap.js"></script>
+    <script src="../../../Resources/Scripts/hilighter.js"></script>
+    <script>$.SyntaxHighlighter.init();
+    $('.highlight').attr('max-height', '100px');
+    </script>
+<style type="text/css">
+      .linenums .atn{color: #666666 !important}
+    </style>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+  </body>
+</html>
